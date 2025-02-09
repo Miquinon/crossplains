@@ -3,6 +3,9 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap');
 
+header{
+    height: 300px;
+}
 
 .main {
 font-family: Bodoni;    
@@ -26,3 +29,22 @@ top: -255px;
 
 }
 
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0;
+    background-color: black;
+    height: 40px;
+    list-style-type: none;
+
+}
+
+ul li{
+    padding-top: 8px;
+
+}
+
+li a{
+    color: gold;
+    text-decoration: none;
+}
