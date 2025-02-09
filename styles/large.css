@@ -21,7 +21,7 @@ top: -255px;
 .pump{
     height: 250px;
     position: relative;
-    top: 515px;
+    top: -515px;
     left: 50px;
 
 }
