@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap');
 
 header{
-    height: 300px;
+    height: 200px;
 }
 
 .main {
@@ -13,7 +13,7 @@ font-weight: 700;
 font-size: 65pt;
 position: relative;
 left: 465px;
-top: -255px;
+top: -210px;
 
 }
 
@@ -22,9 +22,9 @@ top: -255px;
 }
 
 .pump{
-    height: 250px;
+    height: 200px;
     position: relative;
-    top: -515px;
+    top: -435px;
     left: 50px;
 
 }
@@ -47,4 +47,5 @@ ul li{
 li a{
     color: gold;
     text-decoration: none;
+    font-size: 16pt;
 }
