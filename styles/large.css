@@ -9,7 +9,9 @@ header{
 
 h2{
     font-family: Bodoni;
-    font-size: ;
+    font-size: 50pt;
+    text-align: center;
+    border-bottom: solid 3px gold;
 }
 
 .main {
