@@ -12,7 +12,7 @@ header{
 }
 
 .promise{
-    width:1400px;
+    height:900px;
 }
 
 h2{
@@ -63,6 +63,12 @@ li a{
     color: gold;
     text-decoration: none;
     font-size: 16pt;
+}
+
+.statement{
+    width: 400px;
+    display: flex;
+    justify-content: center;
 }
 
 footer {
