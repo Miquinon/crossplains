@@ -7,23 +7,28 @@ p{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h1, h2{
+    font-family: Bodoni, serif;
+}
+
 header{
     height: 200px;
 }
 
 .promise{
     height:900px;
+    display: grid;
+    grid-template-rows: 200px 200px;
+    justify-content: center;
 }
 
 h2{
-    font-family: Bodoni;
     font-size: 50pt;
     text-align: center;
     border-bottom: solid 3px gold;
 }
 
 .main {
-font-family: Bodoni;    
 font-weight: 700;
 font-size: 65pt;
 position: relative;
@@ -66,9 +71,9 @@ li a{
 }
 
 .statement{
-    width: 400px;
-    display: flex;
-    justify-content: center;
+    width: 950px;
+    font-size: 15pt;
+    line-height: 1.4;
 }
 
 footer {
