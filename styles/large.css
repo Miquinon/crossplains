@@ -16,7 +16,7 @@ header{
 }
 
 .promise{
-    height:900px;
+    height:700px;
     display: grid;
     grid-template-rows: 200px 200px;
     justify-content: center;
@@ -26,6 +26,7 @@ h2{
     font-size: 50pt;
     text-align: center;
     border-bottom: solid 3px gold;
+    grid-column: 1 /span 2;
 }
 
 .main {
@@ -71,9 +72,17 @@ li a{
 }
 
 .statement{
-    width: 950px;
+    width: 600px;
     font-size: 15pt;
     line-height: 1.4;
+    grid-row: 2/2;
+    grid-column: 2/2;
+}
+
+.service{
+    height: 400px;
+    grid-row: 2/2;
+    justify-self: center;
 }
 
 footer {
