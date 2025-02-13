@@ -19,6 +19,7 @@ header{
     height:700px;
     display: grid;
     grid-template-rows: 200px 200px;
+    grid-template-columns: 700px 700px;
     justify-content: center;
 }
 
