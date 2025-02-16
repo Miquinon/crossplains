@@ -122,6 +122,10 @@ footer {
 
 form{
     padding-top: 25px;
+    
+}
+
+fieldset{
     display: flex;
     flex-direction: column;
 }
