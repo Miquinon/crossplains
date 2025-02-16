@@ -122,6 +122,8 @@ footer {
 
 form{
     padding-top: 25px;
+    display: flex;
+    flex-direction: column;
 }
 
 label{
