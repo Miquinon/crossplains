@@ -168,3 +168,15 @@ fieldset label input{
     height: 700px;
 
 }
+
+.information{
+    font-size: 15pt;
+    line-height: 1.4;
+    padding: 25px;
+}
+
+.about{
+    justify-self: center;
+    height: 400px;
+    
+}
