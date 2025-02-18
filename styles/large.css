@@ -173,10 +173,25 @@ fieldset label input{
     font-size: 15pt;
     line-height: 1.4;
     padding: 25px;
+    width: 600px;
 }
 
 .about{
     justify-self: center;
     height: 400px;
-    
+
 }
+
+/* Team Page*/
+
+.whole{
+    display: grid;
+    grid-template-rows: 200px 300px 300px 300px 300px;
+    grid-template-columns: 400px 400px 400px;
+    justify-content: center;
+    height: 1400px;
+
+}
+
+
+
