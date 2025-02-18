@@ -193,5 +193,34 @@ fieldset label input{
 
 }
 
+.team{
+    font-size: 50pt;
+    text-align: center;
+    border-bottom: solid 3px gold;
+    grid-column: 1 / span 3;
+}
 
+h3{
+    font-size: 35pt;
+    grid-column: 1/ span 3;
+    justify-self: center;
+}
 
+.management{
+    grid-row: 2 / 2;
+}
+
+.sales{
+    grid-row: 3 / 3;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 100px 400px 100px;
+}
+
+.driver{
+    grid-row: 4 / 4;
+}
+
+.office{
+    grid-row: 5 / 5;
+}
