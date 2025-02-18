@@ -186,7 +186,7 @@ fieldset label input{
 
 .whole{
     display: grid;
-    grid-template-rows: 200px 300px 300px 300px 300px;
+    grid-template-rows: 200px 500px 500px 500px 500px;
     grid-template-columns: 400px 400px 400px;
     justify-content: center;
     height: 1400px;
@@ -208,6 +208,14 @@ h3{
 
 .management{
     grid-row: 2 / 2;
+    grid-column: 1 / span 3;
+    justify-self: center;
+}
+
+.management p{
+    text-align: center;
+    font-size: 18pt;
+    
 }
 
 .manager{
@@ -219,10 +227,10 @@ h3{
     grid-row: 3 / 3;
     display: grid;
     grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 100px 400px 100px;
+    grid-template-rows: 100px 500px 100px;
 }
 
-.salesone, .salestwo, salesthree{
+.salesone, .salestwo, .salesthree{
     height: 250px;
     border-radius: 150px;
 }
