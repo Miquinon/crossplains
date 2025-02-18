@@ -210,6 +210,11 @@ h3{
     grid-row: 2 / 2;
 }
 
+.manager{
+    height: 250px;
+    border-radius: 150px;
+}
+
 .sales{
     grid-row: 3 / 3;
     display: grid;
@@ -217,10 +222,27 @@ h3{
     grid-template-rows: 100px 400px 100px;
 }
 
+.salesone, .salestwo, salesthree{
+    height: 250px;
+    border-radius: 150px;
+}
+
 .driver{
     grid-row: 4 / 4;
+}
+
+.driverone, .drivertwo, .driverthree{
+    height: 250px;
+    border-radius: 150px;
 }
 
 .office{
     grid-row: 5 / 5;
 }
+
+.officeone, .officetwo{
+    height: 250px;
+    border-radius: 150px;
+}
+
+
