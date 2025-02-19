@@ -189,7 +189,7 @@ fieldset label input{
     grid-template-rows: 200px 500px 500px 500px 500px;
     grid-template-columns: 400px 400px 400px;
     justify-content: center;
-    height: 1400px;
+   
 
 }
 
@@ -307,6 +307,11 @@ h3{
     height: 250px;
     border-radius: 150px;
     justify-self: center;
+}
+
+.officetwo{
+    grid-column: 3/3;
+    grid-row: 2/2;
 }
 
 .pam{
