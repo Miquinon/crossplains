@@ -215,7 +215,7 @@ h3{
 .management p{
     text-align: center;
     font-size: 18pt;
-    
+
 }
 
 .manager{
@@ -227,7 +227,7 @@ h3{
     grid-row: 3 / 3;
     display: grid;
     grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 100px 500px 100px;
+    grid-template-rows: 100px 250px 100px;
 }
 
 .salesone, .salestwo, .salesthree{
@@ -235,8 +235,37 @@ h3{
     border-radius: 150px;
 }
 
+.sales p{
+    text-align: center;
+    font-size: 18pt;
+
+}
+
+.salesone{
+    grid-row: 2 / 2;
+    justify-self: center;
+}
+
+.salestwo{
+    justify-self: center;
+}
+
+.salesthree{
+    grid-row: 2 / 2;
+    grid-column: 3 / 3;
+    justify-self: center;
+}
+
 .driver{
     grid-row: 4 / 4;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 100px 250px 100px;
+
+}
+
+.driver h3 {
+    text-align: center;
 }
 
 .driverone, .drivertwo, .driverthree{
@@ -244,8 +273,32 @@ h3{
     border-radius: 150px;
 }
 
+.driverone{
+    justify-self: center;
+}
+
+.drivertwo{
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    justify-self: center;
+}
+
+.driverthree{
+    grid-row: 2 / 2;
+    grid-column: 3 / 3;
+    justify-self: center;
+}
+
+.driver p{
+    text-align: center;
+    font-size: 18pt;
+}
+
 .office{
     grid-row: 5 / 5;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 100px 250px 100px;
 }
 
 .officeone, .officetwo{
