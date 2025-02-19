@@ -248,6 +248,8 @@ h3{
 
 .salestwo{
     justify-self: center;
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
 }
 
 .salesthree{
@@ -304,6 +306,20 @@ h3{
 .officeone, .officetwo{
     height: 250px;
     border-radius: 150px;
+    justify-self: center;
 }
 
+.pam{
+    text-align: center;
+    font-size: 18pt;
+    grid-row: 3 / 3;
+    grid-column: 1 / 1;
+}
+
+.ana{
+    text-align: center;
+    font-size: 18pt;
+    grid-row: 3 / 3;
+    grid-column: 3 / 3;
+}
 
