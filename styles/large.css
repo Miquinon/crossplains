@@ -204,6 +204,7 @@ h3{
     font-size: 35pt;
     grid-column: 1/ span 3;
     justify-self: center;
+    align-self: self-end;
 }
 
 .management{
@@ -328,3 +329,13 @@ h3{
     grid-column: 3 / 3;
 }
 
+/* Products */
+
+.product a{
+    color: gold;
+}
+
+.product li{
+    height: 50px;
+    width: 50px;
+}
