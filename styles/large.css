@@ -11,7 +11,7 @@ p{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1, h2{
+h1, h2, footer p{
     font-family: Bodoni, serif;
 }
 
@@ -334,12 +334,15 @@ h3{
 .product{
     display: grid;
     grid-template-columns: 300px 300px 300px 300px;
-    width: 1200px;
+    justify-content: center;
+    justify-items: center;
     row-gap: 20px;
 }
 
 .product a{
     color: gold;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .product li{
@@ -353,3 +356,10 @@ h3{
     margin-top: 20px;
 }
 
+.stainless{
+    grid-row: 5 / 5;
+    grid-column: 2 / 4;
+    justify-self: center;
+    margin-right: 50px;
+    
+}
