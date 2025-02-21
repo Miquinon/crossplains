@@ -377,8 +377,13 @@ h3{
 .fittings{
     display: grid;
     grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 200px 300px 100px 300px 100px;
+    grid-template-rows: 200px  100px 300px 100px 100px 300px 100px;
     justify-content: center;
+}
+
+.fittings h4{
+    font-size: 35pt;
+    justify-self: center;
 }
 
 .fittings h2{
