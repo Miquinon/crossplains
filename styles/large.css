@@ -381,6 +381,10 @@ h3{
     justify-content: center;
 }
 
+.fittings h2{
+    grid-column: 1/ span 3;
+}
+
 .fittings img{
     height: 275px;
     justify-self: center;
