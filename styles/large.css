@@ -370,3 +370,52 @@ h3{
     margin-right: 30px;
 
 }
+
+
+/* Fittings Page*/
+
+.fittings{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 200px 300px 100px 300px 100px;
+    justify-content: center;
+}
+
+.fittings img{
+    height: 275px;
+    justify-self: center;
+}
+
+.fittings p{
+    justify-self: center;
+}
+
+.tees{
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+}
+
+.ninety{
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+}
+
+.cross{
+    grid-column: 3 / 3;
+    grid-row: 2 / 2;
+}
+
+.fourfive{
+    grid-column: 1 / 1;
+    grid-row: 4 / 4;
+}
+
+.street{
+    grid-column: 2 / 2;
+    grid-row: 4 / 4;
+}
+
+.hex{
+    grid-column: 3 / 3;
+    grid-row: 4 / 4;
+}
