@@ -523,12 +523,12 @@ h3{
     height: 275px;
 }
 
-.sg-title, .Name1{
+.sg-title, .bull{
     align-self: center;
     justify-self: center;
 }
 
-.b7, .part1 {
+.b7, .bullp {
     grid-row: 3 / 3;
     grid-column: 1 / 1;
     justify-self: center;
@@ -544,25 +544,25 @@ h3{
     padding-top: 13px;
 }
 
-.b-size, .sb1-size{
+.b-size, .bp-size{
     grid-row: 4 / 4;
     grid-column: 1 / 1;
 }
 
-.gas, .Name2{
+.gas, .swage-title{
     grid-column: 3 / 3;
     grid-row: 2 / 2;
     justify-self: center;
     align-self: center;
 }
 
-.gasket, .part2 {
+.gasket, .sw {
     grid-row: 3 / 3;
     grid-column: 3 / 3;
     justify-self: center;
 }
 
-.g-size, .sb2-size{
+.g-size, .sw-size{
     grid-column: 3 / 3;
     grid-row: 4 / 4;
 }
@@ -572,7 +572,7 @@ h3{
     border: 2px solid black;
     border-radius: 50px;
     height: 50px;
-    width: 200px;
+    width: 300px;
     padding-left: 30px;
     padding-top: 13px;
 }
