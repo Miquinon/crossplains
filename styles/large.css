@@ -566,3 +566,45 @@ h3{
     grid-column: 3 / 3;
     grid-row: 4 / 4;
 }
+
+
+/*Gauges Page*/
+
+.gauges{
+    display: grid;
+    grid-template-rows: 200px 100px 300px 100px;
+    grid-template-columns: 600px 600px;
+    justify-content: center;
+    margin-bottom: 100px;
+    align-items: center;
+}
+
+.gauges h2{
+    grid-row: 1 / 1;
+}
+
+.gauges h4{
+    font-size: 35pt;
+    grid-row: 2 / 2;
+    grid-column: 1 / span 2;
+    justify-self: center;
+}
+
+.gauges img{
+    grid-row: 3 / 3;
+    grid-column: 1 / span 2;
+    justify-self: center;
+    height: 275px;
+}
+
+.gg-size{
+    grid-row: 3 / 3;
+    grid-column: 1 / span 2;
+    justify-self: center;
+    border: 2px solid black;
+    border-radius: 50px;
+    height: 50px;
+    width: 300px;
+    padding-left: 30px;
+    padding-top: 12px;
+}
