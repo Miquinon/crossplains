@@ -612,4 +612,21 @@ h3{
 
 
 
+/*Tank Product Page*/
+
+.tanks{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 200px 100px 300px 100px 100px 300px 100px ;
+    justify-content: center;
+    margin-bottom: 100px;
+
+}
+
+.tanks h2{
+    grid-row: 1/1;
+    grid-column: 1/ span 3;
+
+}
+
 
