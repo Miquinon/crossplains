@@ -498,10 +498,10 @@ h3{
 }
 
 
-/* Suds Gaskets Page*/
+/* Studs Gaskets Page*/ /* Swage and Bull page*/
 
 
-.studs{
+.studs, .swages{
     display: grid;
     grid-template-rows: 200px 100px 300px 100px;
     justify-content: center;
@@ -509,26 +509,26 @@ h3{
     margin-bottom: 100px;
 }
 
-.studs h4{
+.studs h4, .swages h4{
     font-size: 35pt;
 }
 
-.studs h2{
+.studs h2, .swages h2{
     grid-row: 1 / 1;
     grid-column: 1 / span 3;
 
 }
 
-.studs img{
+.studs img, .swages img{
     height: 275px;
 }
 
-.sg-title{
+.sg-title, .Name1{
     align-self: center;
     justify-self: center;
 }
 
-.b7 {
+.b7, .part1 {
     grid-row: 3 / 3;
     grid-column: 1 / 1;
     justify-self: center;
@@ -544,33 +544,43 @@ h3{
     padding-top: 13px;
 }
 
-.b-size{
+.b-size, .sb1-size{
     grid-row: 4 / 4;
     grid-column: 1 / 1;
 }
 
-.gas{
+.gas, .Name2{
     grid-column: 3 / 3;
     grid-row: 2 / 2;
     justify-self: center;
     align-self: center;
 }
 
-.gasket {
+.gasket, .part2 {
     grid-row: 3 / 3;
     grid-column: 3 / 3;
     justify-self: center;
 }
 
-.g-size{
+.g-size, .sb2-size{
     grid-column: 3 / 3;
     grid-row: 4 / 4;
+}
+
+.swages p{
+    justify-self: center;
+    border: 2px solid black;
+    border-radius: 50px;
+    height: 50px;
+    width: 200px;
+    padding-left: 30px;
+    padding-top: 13px;
 }
 
 
 /*Gauges Page*/
 
-.gauges{
+.gauges {
     display: grid;
     grid-template-rows: 200px 100px 300px 100px;
     grid-template-columns: 600px 600px;
@@ -605,6 +615,10 @@ h3{
     border-radius: 50px;
     height: 50px;
     width: 300px;
-    padding-left: 30px;
+    padding-left: 45px;
     padding-top: 12px;
 }
+
+/* Swages and Bull Page*/
+
+
