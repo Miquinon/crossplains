@@ -496,3 +496,73 @@ h3{
     grid-row: 7 / 7;
     grid-column: 3 / 3;
 }
+
+
+/* Suds Gaskets Page*/
+
+
+.studs{
+    display: grid;
+    grid-template-rows: 200px 100px 300px 100px;
+    justify-content: center;
+    grid-template-columns: 400px 400px 400px;
+    margin-bottom: 100px;
+}
+
+.studs h4{
+    font-size: 35pt;
+}
+
+.studs h2{
+    grid-row: 1 / 1;
+    grid-column: 1 / span 3;
+
+}
+
+.studs img{
+    height: 275px;
+}
+
+.sg-title{
+    align-self: center;
+    justify-self: center;
+}
+
+.b7 {
+    grid-row: 3 / 3;
+    grid-column: 1 / 1;
+    justify-self: center;
+}
+
+.studs p{
+    justify-self: center;
+    border: 2px solid black;
+    border-radius: 50px;
+    height: 50px;
+    width: 200px;
+    padding-left: 30px;
+    padding-top: 13px;
+}
+
+.b-size{
+    grid-row: 4 / 4;
+    grid-column: 1 / 1;
+}
+
+.gas{
+    grid-column: 3 / 3;
+    grid-row: 2 / 2;
+    justify-self: center;
+    align-self: center;
+}
+
+.gasket {
+    grid-row: 3 / 3;
+    grid-column: 3 / 3;
+    justify-self: center;
+}
+
+.g-size{
+    grid-column: 3 / 3;
+    grid-row: 4 / 4;
+}
