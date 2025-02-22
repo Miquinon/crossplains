@@ -11,7 +11,7 @@ p{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1, h2, footer p{
+h1, h2, footer p, h4{
     font-family: Bodoni, serif;
 }
 
@@ -379,11 +379,14 @@ h3{
     grid-template-columns: 400px 400px 400px;
     grid-template-rows: 200px  100px 300px 100px 100px 300px 100px;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 .fittings h4{
     font-size: 35pt;
     justify-self: center;
+    margin: 0;
+    align-self: self-end;
 }
 
 .fittings h2{
@@ -397,34 +400,99 @@ h3{
 
 .fittings p{
     justify-self: center;
+    border: 2px solid black;
+    border-radius: 50px;
+    width: 300px;
+    height: 50px;
+    align-content: center;
+    padding-left: 30px;
+}
+
+.t-title{
+    grid-row: 2 / 2;
+    grid-column: 1 / 1;
 }
 
 .tees{
+    grid-row: 3 / 3;
     grid-column: 1 / 1;
-    grid-row: 2 / 2;
+
+}
+
+.size-one {grid-row: 4 / 4;
+    grid-column: 1 / 1;
+}
+
+.nine {grid-row: 2 / 2;
+    grid-column: 2 / 2;
 }
 
 .ninety{
+    grid-row: 3 / 3;
     grid-column: 2 / 2;
+}
+
+.size-two{
+    grid-row: 4 / 4;
+    grid-column: 2 / 2;
+}
+
+.c-title{
     grid-row: 2 / 2;
+    grid-column: 3 / 3;
 }
 
 .cross{
+    grid-row: 3 / 3;
     grid-column: 3 / 3;
-    grid-row: 2 / 2;
 }
 
-.fourfive{
-    grid-column: 1 / 1;
+.size-three{
     grid-row: 4 / 4;
+    grid-column: 3 / 3;
+}
+
+.snine {
+    grid-row: 5 / 5;
+    grid-column: 1 / 1;
 }
 
 .street{
+    grid-row: 6 / 6;
+    grid-column: 1 / 1;
+}
+
+.size-four {
+    grid-row: 7 / 7;
+    grid-column: 1 / 1;
+}
+
+.fourty {
+    grid-row: 5 / 5;
     grid-column: 2 / 2;
-    grid-row: 4 / 4;
+}
+
+.fourfive{
+    grid-row: 6 / 6;
+    grid-column: 2 / 2;
+}
+
+.size-five {
+    grid-row: 7 / 7;
+    grid-column: 2 / 2;
+}
+
+.union {
+    grid-row: 5 / 5;
+    grid-column: 3 / 3;
 }
 
 .hex{
+    grid-row: 6 / 6;
     grid-column: 3 / 3;
-    grid-row: 4 / 4;
+}
+
+.size-six{
+    grid-row: 7 / 7;
+    grid-column: 3 / 3;
 }
