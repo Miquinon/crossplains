@@ -19,6 +19,10 @@ a:hover{
     color: red;
 }
 
+.product a:hover{
+    color: white;
+}
+
 header{
     height: 200px;
 }
