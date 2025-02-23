@@ -574,9 +574,9 @@ h3{
 }
 
 
-/*Gauges Page*/ /*Hammer Union Page*/ /*Nipple Page*/
+/*Gauges Page*/ /*Hammer Union Page*/ /*Nipple Page*/ /*Stainless Fitting Page*/
 
-.gauges, .hammer, .nipple{
+.gauges, .hammer, .nipple, .stainless{
     display: grid;
     grid-template-rows: 200px 100px 300px 100px;
     grid-template-columns: 600px 600px;
@@ -585,25 +585,25 @@ h3{
     align-items: center;
 }
 
-.gauges h2, .hammer h2, .nipple h2{
+.gauges h2, .hammer h2, .nipple h2, .stainless h2{
     grid-row: 1 / 1;
 }
 
-.gauges h4, .hammer h4, .nipple h4{
+.gauges h4, .hammer h4, .nipple h4, .stainless h4{
     font-size: 35pt;
     grid-row: 2 / 2;
     grid-column: 1 / span 2;
     justify-self: center;
 }
 
-.gauges img, .hammer img, .nipple img{
+.gauges img, .hammer img, .nipple img, .stainless img{
     grid-row: 3 / 3;
     grid-column: 1 / span 2;
     justify-self: center;
     height: 275px;
 }
 
-.gg-size, .ham-size, .ni-size{
+.gg-size, .ham-size, .ni-size, .slf-size{
     grid-row: 4 / 4;
     grid-column: 1 / span 2;
     justify-self: center;
@@ -733,11 +733,17 @@ h3{
     grid-column: 1 / 1;
 }
 
-.camlock, .b-joe{
+.camlock{
     grid-row: 2 / 2;
     grid-column: 2 / 2;
     margin: 0;
     justify-self: end;
+}
+
+.b-joe{
+    grid-row: 2 / 2;
+    grid-column: 2 / 2;
+    margin: 0;
 }
 
 .lock, .bj{
@@ -751,11 +757,17 @@ h3{
     grid-column: 2 / 2;
 }
 
-.adapter, .l-controller{
+.adapter{
     grid-row: 2 / 2;
     grid-column: 3 / 3;
     margin: 0;
     justify-self: end;
+}
+
+.l-controller{
+    grid-row: 2 / 2;
+    grid-column: 3 / 3;
+    margin: 0;
 }
 
 .ha, .lc{
