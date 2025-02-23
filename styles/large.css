@@ -372,9 +372,9 @@ h3{
 }
 
 
-/* Fittings Page*/
+/* Fittings Page*/ /* Cleaners Page */
 
-.fittings{
+.fittings, .cleaner{
     display: grid;
     grid-template-columns: 400px 400px 400px;
     grid-template-rows: 200px  100px 300px 100px 100px 300px 100px;
@@ -382,23 +382,23 @@ h3{
     margin-bottom: 100px;
 }
 
-.fittings h4{
+.fittings h4, .cleaner h4{
     font-size: 35pt;
     justify-self: center;
     margin: 0;
     align-self: self-end;
 }
 
-.fittings h2{
+.fittings h2, .cleaner h2{
     grid-column: 1/ span 3;
 }
 
-.fittings img{
+.fittings img, .cleaner img{
     height: 275px;
     justify-self: center;
 }
 
-.fittings p{
+.fittings p, .cleaner p{
     justify-self: center;
     border: 2px solid black;
     border-radius: 50px;
@@ -408,76 +408,78 @@ h3{
     padding-left: 30px;
 }
 
-.t-title{
+.t-title, .clean1{
     grid-row: 2 / 2;
     grid-column: 1 / 1;
 }
 
-.tees{
+.tees, .cl1{
     grid-row: 3 / 3;
     grid-column: 1 / 1;
 
 }
 
-.size-one {grid-row: 4 / 4;
+.size-one, .cl1-size {
+    grid-row: 4 / 4;
     grid-column: 1 / 1;
 }
 
-.nine {grid-row: 2 / 2;
+.nine, .clean2 {
+    grid-row: 2 / 2;
     grid-column: 2 / 2;
 }
 
-.ninety{
+.ninety, .cl2{
     grid-row: 3 / 3;
     grid-column: 2 / 2;
 }
 
-.size-two{
+.size-two, .cl2-size{
     grid-row: 4 / 4;
     grid-column: 2 / 2;
 }
 
-.c-title{
+.c-title, .clean3{
     grid-row: 2 / 2;
     grid-column: 3 / 3;
 }
 
-.cross{
+.cross, .cl3{
     grid-row: 3 / 3;
     grid-column: 3 / 3;
 }
 
-.size-three{
+.size-three, .cl3-size{
     grid-row: 4 / 4;
     grid-column: 3 / 3;
 }
 
-.snine {
+.snine, .clean4 {
     grid-row: 5 / 5;
     grid-column: 1 / 1;
 }
 
-.street{
+.street, .cl4{
     grid-row: 6 / 6;
     grid-column: 1 / 1;
 }
 
-.size-four {
+.size-four, .cl4-size {
     grid-row: 7 / 7;
     grid-column: 1 / 1;
 }
 
-.fourty {
+.fourty, clean5 {
     grid-row: 5 / 5;
     grid-column: 2 / 2;
 }
 
-.fourfive{
+.fourfive, .cl5{
     grid-row: 6 / 6;
     grid-column: 2 / 2;
 }
 
-.size-five {
+.size-five, .cl5-size {
     grid-row: 7 / 7;
     grid-column: 2 / 2;
 }
