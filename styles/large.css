@@ -569,9 +569,9 @@ h3{
 
 
 
-/*Gauges Page*/ /*Hammer Union Page*/
+/*Gauges Page*/ /*Hammer Union Page*/ /*Nipple Page*/
 
-.gauges, .hammer {
+.gauges, .hammer, .nipple{
     display: grid;
     grid-template-rows: 200px 100px 300px 100px;
     grid-template-columns: 600px 600px;
@@ -580,25 +580,25 @@ h3{
     align-items: center;
 }
 
-.gauges h2, .hammer h2{
+.gauges h2, .hammer h2, .nipple h2{
     grid-row: 1 / 1;
 }
 
-.gauges h4, .hammer h4{
+.gauges h4, .hammer h4, .nipple h4{
     font-size: 35pt;
     grid-row: 2 / 2;
     grid-column: 1 / span 2;
     justify-self: center;
 }
 
-.gauges img, .hammer img{
+.gauges img, .hammer img, .nipple img{
     grid-row: 3 / 3;
     grid-column: 1 / span 2;
     justify-self: center;
     height: 275px;
 }
 
-.gg-size, .ham-size{
+.gg-size, .ham-size, .ni-size{
     grid-row: 4 / 4;
     grid-column: 1 / span 2;
     justify-self: center;
@@ -797,8 +797,12 @@ h3{
     border-radius: 50px;
     height: 50px;
     width: 300px;
-    padding-left: 35px;
+    padding-left: 80px;
     padding-top: 12px;
+ }
+
+ .valves .fv-size{
+    padding-left: 50px;
  }
 
  .c-valve{
