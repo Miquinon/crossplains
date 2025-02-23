@@ -631,6 +631,12 @@ h3{
 
 .tanks p{
     justify-self: center;
+    border: 2px solid black;
+    border-radius: 50px;
+    height: 50px;
+    width: 300px;
+    padding-left: 45px;
+    padding-top: 12px;
 }
 
 .tanks img{
@@ -652,6 +658,7 @@ h3{
 .dresser-size{
     grid-row: 4/4;
     grid-column: 1/1;
+    padding-left: 95px;
 
 }
 
@@ -698,4 +705,5 @@ h3{
 .stick-size{
     grid-row: 7 / 7;
     grid-column: 2 / 2;
+    padding-left: 75px;
 }
