@@ -801,115 +801,115 @@ h3{
     padding-top: 12px;
  }
 
- .part1{
+ .c-valve{
     grid-row: 2 / 2;
     grid-column: 1 / 1;
  }
 
- .p1{
+ .cv{
     grid-row: 3 / 3;
     grid-column: 1 / 1;
     justify-self: center;
  }
 
- .p1-size{
+ .cv-size{
     grid-row: 4 / 4;
     grid-column: 1 / 1;
  }
 
- .part2{
+ .b-valve{
     grid-row: 2 / 2;
     grid-column: 2 / 2;
  }
 
- .p2{
+ .bv{
     grid-row: 3 / 3;
     grid-column: 2 / 2;
     justify-self: end;
  }
 
-.p2-size{
+.bv-size{
     grid-row: 4 / 4;
     grid-column: 2 / 2;
 }
 
-.part3{
+.sb-valve{
     grid-row: 2 / 2;
     grid-column: 3 / 3;
 }
 
-.p3{
+.sbv{
     grid-row: 3 / 3;
     grid-column: 3 / 3;
     justify-self: end;
 }
 
-.p3-size{
+.sbv-size{
     grid-row: 4 / 4;
     grid-column: 3 / 3;
 }
 
-.part4{
+.n-valve{
     grid-row: 5 / 5;
     grid-column: 1 / 1;
     align-self: end;
 }
 
-.p4{
+.nv{
     grid-row: 6 / 6;
     grid-column: 1 / 1;
     justify-self: center;
 }
 
-.p4-size{
+.nv-size{
     grid-row: 7 / 7;
     grid-column: 1 / 1;
 }
 
-.part5{
+.f-valve{
     grid-row: 5 / 5;
     grid-column: 2 / 2;
 }
 
-.p5{
+.fv{
     grid-row: 6 / 6;
     grid-column: 2 / 2;
     justify-self: center;
 }
 
-.p5-size{
+.fv-size{
     grid-row: 7 / 7;
     grid-column: 2 / 2;
 }
 
-.part6{
+.br-valve{
     grid-row: 5 / 5;
     grid-column: 3 / 3;
 }
 
-.p6{
+.brv{
     grid-row: 6 / 6;
     grid-column: 3 / 3;
     justify-self: center;
 }
 
-.p6-size{
+.brv-size{
     grid-row: 7 / 7;
     grid-column: 3 / 3;
 }
 
-.part7{
+.b-check{
     grid-row: 8 / 8;
     grid-column: 2 / 2;
 }
 
-.p7{
+.bc{
     grid-row: 9 / 9;
     grid-column: 2 / 2;
     justify-self: center;
 }
 
-.p7-size{
+.bc-size{
     grid-row: 10 / 10;
     grid-column: 2 / 2;
 }
