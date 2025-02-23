@@ -412,78 +412,78 @@ h3{
     padding-left: 30px;
 }
 
-.t-title, .clean1{
+.t-title, .pd-tape{
     grid-row: 2 / 2;
     grid-column: 1 / 1;
 }
 
-.tees, .cl1{
+.tees, .pdt{
     grid-row: 3 / 3;
     grid-column: 1 / 1;
 
 }
 
-.size-one, .cl1-size {
+.size-one, .pdt-size {
     grid-row: 4 / 4;
     grid-column: 1 / 1;
 }
 
-.nine, .clean2 {
+.nine, .gloves {
     grid-row: 2 / 2;
     grid-column: 2 / 2;
 }
 
-.ninety, .cl2{
+.ninety, .glv{
     grid-row: 3 / 3;
     grid-column: 2 / 2;
 }
 
-.size-two, .cl2-size{
+.size-two, .glv-size{
     grid-row: 4 / 4;
     grid-column: 2 / 2;
 }
 
-.c-title, .clean3{
+.c-title, .lub-cln{
     grid-row: 2 / 2;
     grid-column: 3 / 3;
 }
 
-.cross, .cl3{
+.cross, .lub{
     grid-row: 3 / 3;
     grid-column: 3 / 3;
 }
 
-.size-three, .cl3-size{
+.size-three, .lub-size{
     grid-row: 4 / 4;
     grid-column: 3 / 3;
 }
 
-.snine, .clean4 {
+.snine, .hand-cln {
     grid-row: 5 / 5;
     grid-column: 1 / 1;
 }
 
-.street, .cl4{
+.street, .hcln{
     grid-row: 6 / 6;
     grid-column: 1 / 1;
 }
 
-.size-four, .cl4-size {
+.size-four, .hcln-size {
     grid-row: 7 / 7;
     grid-column: 1 / 1;
 }
 
-.fourty, clean5 {
+.fourty, .scrub-cln {
     grid-row: 5 / 5;
     grid-column: 2 / 2;
 }
 
-.fourfive, .cl5{
+.fourfive, .scln{
     grid-row: 6 / 6;
     grid-column: 2 / 2;
 }
 
-.size-five, .cl5-size {
+.size-five, .scln-size {
     grid-row: 7 / 7;
     grid-column: 2 / 2;
 }
