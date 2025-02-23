@@ -16,10 +16,10 @@ h1, h2, footer p, h4{
 }
 
 a:hover{
-    color: red;
+    color: white;
 }
 
-.product a:hover{
+.product li a:hover{
     color: white;
 }
 
