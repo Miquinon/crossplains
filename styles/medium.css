@@ -32,7 +32,7 @@
     .promise{
         display: flex;
         flex-direction: column;
-         align-items: stretch;
+        align-items: stretch;
     }
 
     .promise h2 {
@@ -57,16 +57,49 @@
         margin-top: 25px;
     }
 
+    /*Team Page*/
 
+    .whole{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .whole h2{
+        font-size: 25pt;
+    }
 
+    .management h3{
+        font-size: 20pt;
+        text-align: center;
+    }
 
+    .manager{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
+    .sales, .driver, .office {
+        display: grid;
+        grid-template-columns: 250px 250px 250px;
+        grid-template-rows: 100px 200px 100px;
+        justify-content: center;
+    }
 
+    .sales h3, .driver h3, .office h3{
+        text-align: center;
+        grid-row: 1 / 1;
+        grid-column: 1 / span 3;
+    }
 
+    .sales img, .driver img, .office img{
+        height: 175px;
+    }
 
+    .sales p, .driver p, .office p{
+        font-size: 14pt;
+    }
 
-
-
+    
 
 
 
