@@ -40,7 +40,7 @@
         align-items: stretch;
     }
 
-    .promise h2 {
+    .promise h2, .product h2 {
         margin-left: 50px;
         margin-right: 50px;
         font-size: 25pt;
@@ -108,9 +108,22 @@
         font-size: 14pt;
     }
 
+
+    /*Product Page*/
     
+    .product{
+        display: grid;
+        grid-template-columns: 200px 200px 200px 200px;
+        row-gap: 10px;
+        margin-bottom: 0;
+    }
 
-
+    .product li{
+        width: 175px;
+        height: 75px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
 
 
 
