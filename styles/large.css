@@ -170,10 +170,10 @@ fieldset label input{
 
 .history{
     display: grid;
-    grid-template-rows: 200px 200px;
+    grid-template-rows: 200px 400px 200px 400px;
     grid-template-columns: 700px 700px;
     justify-content: center;
-    height: 700px;
+   margin-bottom: 100px;
 
 }
 
@@ -189,6 +189,28 @@ fieldset label input{
     height: 400px;
 
 }
+
+.history .location{
+    grid-row: 3 / 3;
+    grid-column: 1 / span 2;
+    border-bottom: 3px solid gold;
+    width: 50%;
+    text-align: center;
+}
+
+iframe{
+    grid-row: 4 / 4;
+    grid-column: 1 / 1;
+    justify-self: center;
+    height: 300px;
+}
+
+.history .front{
+    justify-self: center;
+    grid-row: 4 / 4;
+    grid-column: 2 / 2;
+}
+
 
 /* Team Page*/
 
