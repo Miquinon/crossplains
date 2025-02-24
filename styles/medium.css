@@ -134,10 +134,10 @@
 
     .contact{
         display: grid;
-        grid-template-rows: 200px 200px;
+        grid-template-rows: 100px 200px;
         grid-template-columns: 400px 400px;
         margin-bottom: 50px;
-        height: 500px;
+        height: 400px;
     }
 
     .contact-para{
