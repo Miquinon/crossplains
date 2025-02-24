@@ -170,7 +170,7 @@ fieldset label input{
 
 .history{
     display: grid;
-    grid-template-rows: 200px 400px 200px 400px;
+    grid-template-rows: 200px 400px 150px 400px;
     grid-template-columns: 700px 700px;
     justify-content: center;
    margin-bottom: 100px;
@@ -178,15 +178,16 @@ fieldset label input{
 }
 
 .information{
-    font-size: 15pt;
+    font-size: 16pt;
     line-height: 1.4;
-    padding: 25px;
     width: 600px;
+    margin: 0;
+    margin-top: 10px;
 }
 
 .about{
     justify-self: center;
-    height: 400px;
+    height: 350px;
 
 }
 
