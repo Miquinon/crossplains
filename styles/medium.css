@@ -40,7 +40,7 @@
         align-items: stretch;
     }
 
-    .promise h2, .product h2 {
+    .promise h2, .product h2, .contact h2 {
         margin-left: 50px;
         margin-right: 50px;
         font-size: 25pt;
@@ -125,16 +125,40 @@
         margin-left: 10px;
     }
 
+    .product a{
+        font-size: 12pt;
+    }
 
 
+    /*Contact Page*/
 
+    .contact{
+        display: grid;
+        grid-template-rows: 200px 200px;
+        grid-template-columns: 400px 400px;
+        margin-bottom: 50px;
+        height: 500px;
+    }
 
+    .contact-para{
+        width: 350px;
+        font-size: 14pt;
+        height: 180px;
+        padding: 20px;
+        line-height: 1.2;
+    }
 
+    fieldset{
+        width: 375px;
+    }
 
+    label{
+        font-size: 12pt;
+    }
 
-
-
-
+    input{
+        width: 200px;
+    }
 
 
 
