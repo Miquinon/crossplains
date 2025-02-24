@@ -1,6 +1,11 @@
 @media (max-width: 800px){
 
     /*Home Page*/
+
+    footer{
+        padding-left: 0;
+    }
+
     header{
         height: 100px;
     }
