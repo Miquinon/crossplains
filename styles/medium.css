@@ -40,7 +40,7 @@
         align-items: stretch;
     }
 
-    .promise h2, .product h2, .contact h2 {
+    .promise h2, .product h2, .contact h2, .history h2 {
         margin-left: 50px;
         margin-right: 50px;
         font-size: 25pt;
@@ -160,13 +160,46 @@
         width: 200px;
     }
 
+    /*About Page*/
 
+    .history{
+        display: block;
+        margin-bottom: 50px;
+    }
 
+    .about{
+        height: 250px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
+    .information{
+        font-size: 12pt;
+        margin-top: 25px;
+        text-align: justify;
+        justify-self: center;
+    }
 
+    .location{
+        font-size: 20pt;
+        width: 60%;
+    }
 
+    iframe{
+        height: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
 
-
+    .front{
+        height: 250px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
 
 
