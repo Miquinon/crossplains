@@ -144,7 +144,7 @@ form{
 fieldset{
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 550px;
     border: solid 3px black;
 }
 
@@ -166,6 +166,8 @@ fieldset label input{
     width: 250px;
     height: 25px;
 }
+
+
 
 /* About Page*/
 
