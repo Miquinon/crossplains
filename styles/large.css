@@ -96,6 +96,7 @@ li a{
     line-height: 1.4;
     grid-row: 2/2;
     grid-column: 2/2;
+    text-align: justify;
 }
 
 .service{
@@ -132,7 +133,7 @@ footer {
     color: gold;
     height: 250px;
     padding: 40px;
-
+    text-align: justify;
 }
 
 form{
@@ -183,6 +184,7 @@ fieldset label input{
     width: 600px;
     margin: 0;
     margin-top: 10px;
+    text-align: justify;
 }
 
 .about{
