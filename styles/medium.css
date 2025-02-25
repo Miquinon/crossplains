@@ -51,7 +51,8 @@
         width: 600px;
         align-self: center;
         font-size: 14pt;
-
+        text-align: justify;
+        line-height: 1.2;
     }
 
     .service{
@@ -175,7 +176,7 @@
     }
 
     .information{
-        font-size: 12pt;
+        font-size: 14pt;
         margin-top: 25px;
         text-align: justify;
         justify-self: center;
