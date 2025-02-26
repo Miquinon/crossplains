@@ -417,6 +417,11 @@ h3{
     height: 100px;
     width: 500px;
     margin-top: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 38pt;
+    text-decoration: none;
+    padding-top: 15px;
 }
 
 
