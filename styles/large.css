@@ -423,6 +423,9 @@ h3{
     padding-top: 15px;
 }
 
+.order-button #button{
+    display: block;
+}
 
 /* Fittings Page*/ /* Cleaners Page */
 
