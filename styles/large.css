@@ -400,10 +400,21 @@ h3{
 
 .stainless{
     grid-row: 5 / 5;
-    grid-column: 2 / 4;
+    grid-column: 1 / span 2;
     justify-self: center;
     margin-right: 30px;
 
+}
+
+.button{
+    grid-row: 5 / 5;
+    grid-column: 3 / span 2;
+    justify-self: center;
+    margin-right: 30px;
+    background-color: gold;
+    color: black;
+    border: solid 3px black;
+    border-radius: 10px;
 }
 
 
