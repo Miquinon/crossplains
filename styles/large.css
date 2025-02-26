@@ -410,11 +410,13 @@ h3{
     grid-row: 5 / 5;
     grid-column: 3 / span 2;
     justify-self: center;
-    margin-right: 30px;
     background-color: gold;
     color: black;
     border: solid 3px black;
-    border-radius: 10px;
+    border-radius: 70px;
+    height: 100px;
+    width: 500px;
+    margin-top: 20px;
 }
 
 
