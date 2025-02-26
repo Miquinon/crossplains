@@ -427,6 +427,9 @@ h3{
     display: block;
 }
 
+.order-button{
+    margin-bottom: 50px;
+}
 /* Fittings Page*/ /* Cleaners Page */
 
 .fittings, .cleaner{
