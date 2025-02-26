@@ -130,6 +130,15 @@
         font-size: 12pt;
     }
 
+    #button{
+        height: 75px;
+        width: 350px;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 28pt;
+        padding-top: 10px;
+    }
+
 
     /*Contact Page*/
 
