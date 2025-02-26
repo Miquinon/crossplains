@@ -406,7 +406,7 @@ h3{
 
 }
 
-.button{
+#button{
     grid-row: 5 / 5;
     grid-column: 3 / span 2;
     justify-self: center;
