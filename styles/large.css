@@ -406,30 +406,7 @@ h3{
 
 }
 
-#button{
-    grid-row: 5 / 5;
-    grid-column: 3 / span 2;
-    justify-self: center;
-    background-color: gold;
-    color: black;
-    border: solid 3px black;
-    border-radius: 70px;
-    height: 100px;
-    width: 500px;
-    margin-top: 20px;
-    text-align: center;
-    font-size: 38pt;
-    text-decoration: none;
-    padding-top: 15px;
-}
 
-.order-button #button{
-    display: block;
-}
-
-.order-button{
-    margin-bottom: 50px;
-}
 /* Fittings Page*/ /* Cleaners Page */
 
 .fittings, .cleaner{
