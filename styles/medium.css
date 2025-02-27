@@ -40,7 +40,7 @@
         align-items: stretch;
     }
 
-    .promise h2, .product h2, .contact h2, .history h2 {
+    .promise h2, .product h2, .contact h2, .history h2, .fittings h2 {
         margin-left: 50px;
         margin-right: 50px;
         font-size: 25pt;
@@ -207,12 +207,25 @@
     }
 
 
+    /*Fittings Page*/
 
+    .fittings{
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 100px 100px 200px 100px 100px 300px 100px;
+    }
 
+    .fittings img{
+        height: 200px;
+    }
 
+    .fittings h4{
+        font-size: 20px;
+    }
 
-
-
+    .fittings p{
+        width: 200px;
+        font-size: 14pt;
+    }
 
 
 
