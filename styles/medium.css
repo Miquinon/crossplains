@@ -40,7 +40,7 @@
         align-items: stretch;
     }
 
-    .promise h2, .product h2, .contact h2, .history h2, .fittings h2, .studs h2, .gauges h2 {
+    .promise h2, .product h2, .contact h2, .history h2, .fittings h2, .studs h2, .gauges h2, .swages h2 {
         margin-left: 50px;
         margin-right: 50px;
         font-size: 25pt;
@@ -214,20 +214,20 @@
         grid-template-rows: 100px 50px 200px 100px 100px 200px 50px;
     }
 
-    .fittings img, .studs img, .gauges img{
+    .fittings img, .studs img, .gauges img, .swages img{
         height: 200px;
     }
 
-    .fittings h4, .studs h4, .gauges h4{
+    .fittings h4, .studs h4, .gauges h4, .swages h4{
         font-size: 25px;
     }
 
-    .fittings p, .studs p, .gauges p{
+    .fittings p, .studs p, .gauges p, .swages p{
         width: 250px;
         font-size: 14pt;
     }
 
-    .studs{
+    .studs, .swages{
         grid-template-rows: 100px 50px 200px 50px;
         grid-template-columns: 300px 300px 300px;
         margin-bottom: 50px;
@@ -237,6 +237,10 @@
         grid-template-rows: 100px 50px 200px 50px;
         grid-template-columns: 400px 400px;
         margin-bottom: 50px;
+    }
+
+    .gauges p{
+        padding: 12px;
     }
 
 
