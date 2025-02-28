@@ -227,13 +227,13 @@
         font-size: 14pt;
     }
 
-    .studs, .swages, .hammer{
+    .studs, .swages{
         grid-template-rows: 100px 50px 200px 50px;
         grid-template-columns: 300px 300px 300px;
         margin-bottom: 50px;
     }
 
-    .gauges{
+    .gauges,  .hammer{
         grid-template-rows: 100px 50px 200px 50px;
         grid-template-columns: 400px 400px;
         margin-bottom: 50px;
