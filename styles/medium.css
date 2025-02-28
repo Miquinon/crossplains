@@ -40,7 +40,7 @@
         align-items: stretch;
     }
 
-    .promise h2, .product h2, .contact h2, .history h2, .fittings h2 {
+    .promise h2, .product h2, .contact h2, .history h2, .fittings h2, .studs h2 {
         margin-left: 50px;
         margin-right: 50px;
         font-size: 25pt;
@@ -214,18 +214,26 @@
         grid-template-rows: 100px 50px 200px 100px 100px 200px 50px;
     }
 
-    .fittings img{
+    .fittings img, .studs img{
         height: 200px;
     }
 
-    .fittings h4{
+    .fittings h4, .studs h4{
         font-size: 25px;
     }
 
-    .fittings p{
+    .fittings p, .studs p{
         width: 250px;
         font-size: 14pt;
     }
+
+    /*Studs Page*/
+
+    .studs{
+        grid-template-rows: 100px 50px 200px 50px;
+        grid-template-columns: 300px 300px 300px;
+    }
+
 
 
 
