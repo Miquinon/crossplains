@@ -40,7 +40,7 @@
         align-items: stretch;
     }
 
-    .promise h2, .product h2, .contact h2, .history h2, .fittings h2, .studs h2 {
+    .promise h2, .product h2, .contact h2, .history h2, .fittings h2, .studs h2, .gauges h2 {
         margin-left: 50px;
         margin-right: 50px;
         font-size: 25pt;
@@ -207,32 +207,57 @@
     }
 
 
-    /*Fittings Page*/
+    /*Fittings Page*/ /*Studs Page*/  /*Guages Page*/
 
     .fittings{
         grid-template-columns: 300px 300px 300px;
         grid-template-rows: 100px 50px 200px 100px 100px 200px 50px;
     }
 
-    .fittings img, .studs img{
+    .fittings img, .studs img, .gauges img{
         height: 200px;
     }
 
-    .fittings h4, .studs h4{
+    .fittings h4, .studs h4, .gauges h4{
         font-size: 25px;
     }
 
-    .fittings p, .studs p{
+    .fittings p, .studs p, .gauges p{
         width: 250px;
         font-size: 14pt;
     }
 
-    /*Studs Page*/
-
     .studs{
         grid-template-rows: 100px 50px 200px 50px;
         grid-template-columns: 300px 300px 300px;
+        margin-bottom: 50px;
     }
+
+    .gauges{
+        grid-template-rows: 100px 50px 200px 50px;
+        grid-template-columns: 400px 400px;
+        margin-bottom: 50px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
