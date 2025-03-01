@@ -41,7 +41,7 @@
     }
 
     .promise h2, .product h2, .contact h2, .history h2, .fittings h2, .studs h2, .gauges h2, .swages h2, .hammer h2,
-    .tanks h2, .hose h2, .valves h2, .nipple h2 {
+    .tanks h2, .hose h2, .valves h2, .nipple h2, .weld-fitting h2 {
         margin-left: 50px;
         margin-right: 50px;
         font-size: 25pt;
@@ -208,7 +208,7 @@
     }
 
 
-    /*Fittings Page*/ /*Studs Page*/  /*Guages Page*/ /*Hammer Page*/ /*Tanks Page*/ /*Nipple Page*/ 
+    /*Fittings Page*/ /*Studs Page*/  /*Guages Page*/ /*Hammer Page*/ /*Tanks Page*/ /*Nipple Page*/ /* Weld Fitting Page*/
 
     .fittings{
         grid-template-columns: 300px 300px 300px;
@@ -216,20 +216,21 @@
     }
 
     .fittings img, .studs img, .gauges img, .swages img, .hammer img, .tanks img, .hose img, .valves img,
-    .nipple img{
+    .nipple img, .weld-fitting img{
         height: 200px;
     }
 
-    .fittings h4, .studs h4, .gauges h4, .swages h4, .hammer h4, .tanks h4, .hose h4, .valves h4, .nipple h4{
+    .fittings h4, .studs h4, .gauges h4, .swages h4, .hammer h4, .tanks h4, .hose h4, .valves h4, .nipple h4,
+    .weld-fitting h4{
         font-size: 25px;
     }
 
-    .fittings p, .studs p, .gauges p, .swages p, .hammer p, .tanks p, .hose p, .valves p, .nipple p{
+    .fittings p, .studs p, .gauges p, .swages p, .hammer p, .tanks p, .hose p, .valves p, .nipple p, .weld-fitting p{
         width: 250px;
         font-size: 14pt;
     }
 
-    .studs, .swages, .hose{
+    .studs, .swages, .hose, .weld-fitting{
         grid-template-rows: 100px 50px 200px 50px;
         grid-template-columns: 300px 300px 300px;
         margin-bottom: 50px;
