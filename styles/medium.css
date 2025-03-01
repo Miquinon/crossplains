@@ -215,7 +215,7 @@
         grid-template-rows: 100px 50px 200px 100px 100px 200px 50px;
     }
 
-    .fittings img, .studs img, .gauges img, .swages img, .hammer img, .tanks img, .hose img, .valves img
+    .fittings img, .studs img, .gauges img, .swages img, .hammer img, .tanks img, .hose img, .valves img,
     .nipple img{
         height: 200px;
     }
