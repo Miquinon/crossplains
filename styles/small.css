@@ -30,6 +30,13 @@
         padding: 0;
     }
 
+    .nav-menu{
+        display: none;
+    }
+
+    .nav-menu.open {
+        display: block;
+    }
 
 
 
