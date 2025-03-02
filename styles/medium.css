@@ -41,7 +41,7 @@
     }
 
     .promise h2, .product h2, .contact h2, .history h2, .fittings h2, .studs h2, .gauges h2, .swages h2, .hammer h2,
-    .tanks h2, .hose h2, .valves h2, .nipple h2, .weld-fitting h2, .regulator h2, .cleaner h2 {
+    .tanks h2, .hose h2, .valves h2, .nipple h2, .weld-fitting h2, .regulator h2, .cleaner h2, .stainless h2 {
         margin-left: 50px;
         margin-right: 50px;
         font-size: 25pt;
@@ -217,17 +217,17 @@
     }
 
     .fittings img, .studs img, .gauges img, .swages img, .hammer img, .tanks img, .hose img, .valves img,
-    .nipple img, .weld-fitting img, .regulator img, .cleaner img{
+    .nipple img, .weld-fitting img, .regulator img, .cleaner img, .stainless img{
         height: 200px;
     }
 
     .fittings h4, .studs h4, .gauges h4, .swages h4, .hammer h4, .tanks h4, .hose h4, .valves h4, .nipple h4,
-    .weld-fitting h4, .regulator h4, .cleaner h4{
+    .weld-fitting h4, .regulator h4, .cleaner h4, .stainless h4{
         font-size: 25px;
     }
 
     .fittings p, .studs p, .gauges p, .swages p, .hammer p, .tanks p, .hose p, .valves p, .nipple p, .weld-fitting p,
-    .regulator p, .cleaner p{
+    .regulator p, .cleaner p, .stainless p{
         width: 250px;
         font-size: 14pt;
     }
@@ -238,7 +238,7 @@
         margin-bottom: 50px;
     }
 
-    .gauges,  .hammer, .nipple {
+    .gauges,  .hammer, .nipple, .stainless {
         grid-template-rows: 100px 50px 200px 50px;
         grid-template-columns: 400px 400px;
         margin-bottom: 50px;
