@@ -2,22 +2,33 @@
 
 /*Header*/
 
-.gold{
-    height: 50px;
-}
+    .gold{
+     height: 50px;
+    }
 
-.main{
-    font-size: 28px;
-    width: 500px;
-    left: 120px;
-    top: -65px;
-}
+    .main{
+        font-size: 28px;
+        width: 500px;
+        left: 120px;
+        top: -65px;
+    }
 
-.pump{
-    display: none;
-}
+    .pump{
+     display: none;
+    }
 
-
+    .hamburger-button{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 50px;
+        background-color: black;
+        color: gold;
+        height: 30px;
+        width: 30px;
+        font-size: 16pt;
+        padding: 0;
+    }
 
 
 
