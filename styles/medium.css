@@ -2,6 +2,10 @@
 
     /*Home Page*/
 
+    .hamburger-button{
+        display: none;
+    }
+
     footer{
         padding-left: 0;
     }

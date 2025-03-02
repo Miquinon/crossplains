@@ -64,6 +64,10 @@ h2{
 
 }
 
+.hamburger-button{
+    display: none;
+}
+
 nav{
     width: 100%;
 

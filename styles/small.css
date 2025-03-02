@@ -6,7 +6,16 @@
     height: 100px;
 }
 
+.main{
+    font-size: 28px;
+    width: 500px;
+    left: 120px;
+    top: -65px;
+}
 
+.pump{
+    display: none;
+}
 
 
 
