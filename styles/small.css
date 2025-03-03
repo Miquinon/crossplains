@@ -84,10 +84,15 @@
         height: 175px;
     }
 
+    .fittings{
+        display: block;
+    }
+
     .fittings p{
         font-size: 15pt;
         width: 350px;
     }
+
 
 
 
