@@ -84,11 +84,13 @@
         height: 175px;
     }
 
-    .fittings{
+    .fittings, .studs, .gauges, .swages, .hammer, .tanks, .hose, .valves, .nipple, .weld-fitting, .regulator, .cleaner,
+    .stainless{
         display: block;
     }
 
-    .fittings p{
+    .fittings p, .studs p, .gauges p, .swages p, .hammer p, .tanks p, .hose p, .valves p, .nipple p, .weld-fitting p, 
+    .regulator p, .cleaner p, .stainless p{
         font-size: 15pt;
         width: 350px;
     }
