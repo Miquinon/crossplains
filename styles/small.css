@@ -55,11 +55,39 @@
 
     }
 
+    footer{
+        font-size: 15pt;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+    }
 
+    /*Fittings Page*/
 
+    footer p{
+        margin-bottom: 0;
+    }
 
+    h2{
+        font-size: 20pt;
+    }
 
+    h4{
+        margin-top: 50px;
+        font-size: 20pt;
+    }
 
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 175px;
+    }
+
+    .fittings p{
+        font-size: 15pt;
+        width: 350px;
+    }
 
 
 
