@@ -62,8 +62,6 @@
         padding-bottom: 20px;
     }
 
-    /*Fittings Page*/
-
     footer p{
         margin-bottom: 0;
     }
@@ -84,6 +82,8 @@
         height: 175px;
     }
 
+    /*Product pages*/
+
     .fittings, .studs, .gauges, .swages, .hammer, .tanks, .hose, .valves, .nipple, .weld-fitting, .regulator, .cleaner,
     .stainless{
         display: block;
@@ -95,9 +95,23 @@
         width: 350px;
     }
 
+    /*Home Page*/
 
 
+    .promise{
+        display: block;
+        height: auto;
+    }
 
+    .promise p{
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .promise img{
+        height: 175px;
+    }
 
 
 
