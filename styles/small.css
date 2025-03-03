@@ -114,7 +114,15 @@
     }
 
 
+    /*Team page*/
 
+    h3{
+        margin-top: 50px;
+    }
+
+    .sales, .driver, .office{
+        display: block;
+    }
 
 
 
