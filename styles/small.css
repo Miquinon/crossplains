@@ -39,8 +39,7 @@
     }
 
     .nav-menu.open {
-        display: flex;
-        flex-direction: column;
+        display: block;
         height: 200px;
         background-color: black;
         text-align: center;
@@ -49,6 +48,10 @@
 
     ul li{
         padding: 10px;
+    }
+
+    ul{
+        display: block;
     }
 
 
