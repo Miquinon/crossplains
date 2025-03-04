@@ -66,11 +66,11 @@
         margin-bottom: 0;
     }
 
-    h2{
+    .tanks h2, .valves h2, .cleaner h2, .stainless h2, .fittings h2, .studs h2, .gauges h2, .swages h2, .hammer h2{
         font-size: 20pt;
     }
 
-    h4, .tanks h4{
+    .tanks h4, .valves h4, .regulator h4, .stainless h4, .fittings h4, .studs h4, .gauges h4, .swages h4, .hammer h4{
         margin-top: 50px;
         font-size: 20pt;
     }
