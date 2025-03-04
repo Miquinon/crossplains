@@ -70,7 +70,7 @@
         font-size: 20pt;
     }
 
-    h4{
+    h4, .tanks h4{
         margin-top: 50px;
         font-size: 20pt;
     }
@@ -178,12 +178,17 @@
         border-top: 6px solid black;
     }
 
+    /* Hose page*/
 
+    .hose .repair{
+        text-align: center;
+        font-size: 20pt;
+    }
 
-
-
-
-
+    .hose .camlock, .hose .adapter{
+        justify-self: center;
+        font-size: 20pt;
+    }
 
 
 
