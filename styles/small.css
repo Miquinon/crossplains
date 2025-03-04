@@ -75,7 +75,7 @@
         font-size: 20pt;
     }
 
-    img{
+    img, .history img{
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -144,16 +144,39 @@
         margin-right: 0;
     }
 
+    /* Contact Page*/
+    .contact{
+        display: block;
+        height: auto;
+        justify-items: center;
+    }
+
+    .contact h2{
+        font-size: 20pt;
+        width: 400px;
+    }
 
 
+    /*About Page*/
+
+    .history h2 {
+        font-size: 20pt;
+    }
+
+    .history p{
+        width: 400px;
+        line-height: 1.2;
+    }
 
 
+    iframe{
+        width: 400px;
+        border-bottom: 6px solid black;
+    }
 
-
-
-
-
-
+    .history img{
+        height: 200px;
+    }
 
 
 
