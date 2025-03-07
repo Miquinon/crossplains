@@ -1,0 +1,205 @@
+@media (max-width: 600px) {
+
+/*Header*/
+
+    header{
+        height: 50px;
+    }
+
+    .gold{
+     height: 50px;
+    }
+
+    .main{
+        font-size: 28px;
+        width: 500px;
+        left: 120px;
+        top: -65px;
+    }
+
+    .pump{
+     display: none;
+    }
+
+    .hamburger-button{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 50px;
+        background-color: black;
+        color: gold;
+        height: 30px;
+        width: 30px;
+        font-size: 16pt;
+        padding: 0;
+    }
+
+    .nav-menu{
+        display: none;
+    }
+
+    .nav-menu.open {
+        display: block;
+        height: 250px;
+        background-color: black;
+        text-align: center;
+        padding: 10px;
+    }
+
+    ul li{
+        padding: 10px;
+    }
+
+    ul{
+        display: block;
+
+    }
+
+    footer{
+        font-size: 15pt;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+    }
+
+    footer p{
+        margin-bottom: 0;
+    }
+
+    .tanks h2, .valves h2, .cleaner h2, .stainless h2, .fittings h2, .studs h2, .gauges h2, .swages h2, .hammer h2{
+        font-size: 20pt;
+    }
+
+    .tanks h4, .valves h4, .regulator h4, .stainless h4, .fittings h4, .studs h4, .gauges h4, .swages h4, .hammer h4{
+        margin-top: 50px;
+        font-size: 20pt;
+    }
+
+    img, .history img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 175px;
+    }
+
+    /*Product pages*/
+
+    .fittings, .studs, .gauges, .swages, .hammer, .tanks, .hose, .valves, .nipple, .weld-fitting, .regulator, .cleaner,
+    .stainless{
+        display: block;
+    }
+
+    .fittings p, .studs p, .gauges p, .swages p, .hammer p, .tanks p, .hose p, .valves p, .nipple p, .weld-fitting p, 
+    .regulator p, .cleaner p, .stainless p{
+        font-size: 15pt;
+        width: 350px;
+    }
+
+    /*Home Page*/
+
+
+    .promise{
+        display: block;
+        height: auto;
+    }
+
+    .promise p{
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .promise img{
+        height: 175px;
+    }
+
+
+    /*Team page*/
+
+    h3{
+        margin-top: 50px;
+    }
+
+    .sales, .driver, .office{
+        display: block;
+    }
+
+
+    /*Product Page*/
+
+
+    .product{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .product h2{
+        width: 400px;
+        font-size: 20pt;
+    }
+
+    .product .stainless{
+        margin-right: 0;
+    }
+
+    /* Contact Page*/
+    .contact{
+        display: block;
+        height: auto;
+        justify-items: center;
+    }
+
+    .contact h2{
+        font-size: 20pt;
+        width: 400px;
+    }
+
+
+    /*About Page*/
+
+    .history h2 {
+        font-size: 20pt;
+    }
+
+    .history p{
+        width: 400px;
+        line-height: 1.2;
+    }
+
+
+    iframe{
+        width: 400px;
+    }
+
+    .history .front{
+        height: 200px;
+        border-top: 6px solid black;
+    }
+
+    /* Hose page*/
+
+    .hose .repair{
+        text-align: center;
+        font-size: 20pt;
+    }
+
+    .hose .camlock, .hose .adapter{
+        justify-self: center;
+        font-size: 20pt;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

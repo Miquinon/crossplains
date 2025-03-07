@@ -1,0 +1,29 @@
+<div class="contact">
+    <h2>We want to hear from you!</h2>
+
+    <p class="contact-para">
+        We welcome your feedback on any order you have placed with us. If you need to place a special 
+        order or have questions regarding an order feel free to give the store a call or you can contact
+        us through email. 
+    </p>
+
+    <form method="get" action="#" id="contact-form">
+        <fieldset>
+        
+            <label> First Name* <input type="text" id="fname" name="fname" required></label>
+            <label> Last Name* <input type="text" id="lname" name="lname"></label>
+            <label>Email* <input type="email" id="email" name="email" placeholder="company@gmail.com" 
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$]" required></label>
+            <label>Mobile Number* <input type="tel" id="mobile" name="mobile-number" required></label>
+            <label>Associated Company* <input type="text" id="company" name="company-name" pattern="^[a-zA-Z\- ]{7,}$" 
+                required></label>
+            
+             <label>Comments*</label>
+             <textarea class="comments" name="comments" rows="6" cols="50" required></textarea>   
+
+        </fieldset>   
+
+        <input type="submit" value="Process My Request" class="submit">
+
+    </form>
+</div>

@@ -1,0 +1,305 @@
+@media (max-width: 1000px){
+
+    /*Home Page*/
+
+    .hamburger-button{
+        display: none;
+    }
+
+    footer{
+        padding-left: 0;
+    }
+
+    header{
+        height: 100px;
+    }
+    .gold {
+        width: 100%;
+        height: 100px;
+    }
+
+    .main {
+        font-weight: 700;
+        font-size: 35pt;
+        position: relative;
+        left: 170px;
+        top: -110px;
+        width: 700px;
+    }
+
+    .pump {
+        height: 100px;
+        position: relative;
+        top: -225px;
+        left: 25px;
+    }
+
+    .li a{
+        font-size: 14pt;
+    }
+
+    .promise{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .promise h2, .product h2, .contact h2, .history h2, .fittings h2, .studs h2, .gauges h2, .swages h2, .hammer h2,
+    .tanks h2, .hose h2, .valves h2, .nipple h2, .weld-fitting h2, .regulator h2, .cleaner h2, .stainless h2 {
+        margin-left: 50px;
+        margin-right: 50px;
+        font-size: 25pt;
+
+    }
+
+    .statement{
+        width: 600px;
+        align-self: center;
+        font-size: 14pt;
+        text-align: justify;
+        line-height: 1.2;
+    }
+
+    .service{
+        height: 250px;
+        width: 325px;
+        align-self: center;
+        margin-bottom: 50px;
+        margin-top: 25px;
+    }
+
+    /*Team Page*/
+
+    .whole{
+        display: block;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .whole h2{
+        font-size: 25pt;
+        padding-bottom: 10px;
+    }
+
+    .management{
+        display: block;
+    }
+
+    .manager{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 175px;
+    }
+
+    .sales, .driver, .office {
+        display: grid;
+        grid-template-columns: 250px 250px 250px;
+        grid-template-rows: 100px 200px 100px;
+        justify-content: center;
+    }
+
+    .sales h3, .management h3, .driver h3, .office h3{
+        text-align: center;
+        grid-row: 1 / 1;
+        grid-column: 1 / span 3;
+        font-size: 20pt;
+        text-align: center;
+    }
+
+    .sales img, .driver img, .office img{
+        height: 175px;
+    }
+
+    .sales p, .driver p, .office p{
+        font-size: 14pt;
+    }
+
+
+    /*Product Page*/
+    
+    .product{
+        display: grid;
+        grid-template-columns: 200px 200px 200px 200px;
+        row-gap: 10px;
+        margin-bottom: 0;
+    }
+
+    .product li{
+        width: 175px;
+        height: 75px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .product a{
+        font-size: 12pt;
+    }
+
+
+    /*Contact Page*/
+
+    .contact{
+        display: grid;
+        grid-template-rows: 100px 200px;
+        grid-template-columns: 400px 400px;
+        margin-bottom: 50px;
+        height: 550px;
+    }
+
+    .contact-para{
+        width: 350px;
+        font-size: 14pt;
+        height: 180px;
+        padding: 20px;
+        line-height: 1.2;
+    }
+
+    fieldset{
+        width: 375px;
+    }
+
+    label{
+        font-size: 12pt;
+    }
+
+    input{
+        width: 200px;
+    }
+
+    .comments{
+        width: 350px;
+    }
+
+    /*About Page*/
+
+    .history{
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    .about{
+        height: 250px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .information{
+        font-size: 14pt;
+        margin-top: 25px;
+        text-align: justify;
+        justify-self: center;
+    }
+
+    .location{
+        font-size: 20pt;
+        width: 60%;
+    }
+
+    iframe{
+        height: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .front{
+        height: 250px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /*Fittings Page*/ /*Studs Page*/  /*Guages Page*/ /*Hammer Page*/ /*Tanks Page*/ /*Nipple Page*/ /* Weld Fitting Page*/
+    /*Regulator Page*/
+
+    .fittings{
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 100px 50px 200px 100px 100px 200px 50px;
+    }
+
+    .fittings img, .studs img, .gauges img, .swages img, .hammer img, .tanks img, .hose img, .valves img,
+    .nipple img, .weld-fitting img, .regulator img, .cleaner img, .stainless img{
+        height: 200px;
+    }
+
+    .fittings h4, .studs h4, .gauges h4, .swages h4, .hammer h4, .tanks h4, .hose h4, .valves h4, .nipple h4,
+    .weld-fitting h4, .regulator h4, .cleaner h4, .stainless h4{
+        font-size: 25px;
+    }
+
+    .fittings p, .studs p, .gauges p, .swages p, .hammer p, .tanks p, .hose p, .valves p, .nipple p, .weld-fitting p,
+    .regulator p, .cleaner p, .stainless p{
+        width: 250px;
+        font-size: 14pt;
+    }
+
+    .studs, .swages, .hose, .weld-fitting, .regulator{
+        grid-template-rows: 100px 50px 200px 50px;
+        grid-template-columns: 300px 300px 300px;
+        margin-bottom: 50px;
+    }
+
+    .gauges,  .hammer, .nipple, .stainless {
+        grid-template-rows: 100px 50px 200px 50px;
+        grid-template-columns: 400px 400px;
+        margin-bottom: 50px;
+    }
+
+    .gauges p{
+        padding: 12px;
+    }
+
+    .tanks, .cleaner{
+        grid-template-rows: 100px 50px 200px 50px 100px 200px 50px;
+        grid-template-columns: 300px 300px 300px;
+        margin-bottom: 50px;
+    }
+
+    .hose p{
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .regulator p{
+        padding-left: 35px;
+    }
+
+
+    /*Valves Page*/
+
+    .valves{
+        grid-template-rows: 100px 50px 200px 50px 100px 200px 50px 100px 200px 50px;
+        grid-template-columns: 300px 300px 300px;
+        
+    }
+
+    .valves p{
+        padding-left: 25px;
+    }
+
+
+/*testing*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+   
+    

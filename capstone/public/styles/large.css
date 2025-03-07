@@ -1,0 +1,977 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+  
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap');
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, footer p, h4{
+    font-family: Bodoni, serif;
+}
+
+a:hover{
+    color: white;
+}
+
+.product li a:hover{
+    color: white;
+}
+
+header{
+    height: 200px;
+}
+
+.promise{
+    height:700px;
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 700px 700px;
+    justify-content: center;
+}
+
+h2{
+    font-size: 50pt;
+    text-align: center;
+    border-bottom: solid 3px gold;
+    grid-column: 1 /span 2;
+}
+
+.main {
+    font-weight: 700;
+    font-size: 65pt;
+    position: relative;
+    left: 465px;
+    top: -210px;
+    width: 1200px;
+
+}
+
+.gold{ width: 100%;
+        height: 200px;
+}
+
+.pump{
+    height: 200px;
+    position: relative;
+    top: -435px;
+    left: 50px;
+
+}
+
+.hamburger-button{
+    display: none;
+}
+
+nav{
+    width: 100%;
+
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0;
+    background-color: black;
+    height: 40px;
+    list-style-type: none;
+
+}
+
+ul li{
+    padding-top: 8px;
+
+}
+
+li a{
+    color: gold;
+    text-decoration: none;
+    font-size: 16pt;
+}
+
+.statement{
+    width: 600px;
+    font-size: 15pt;
+    line-height: 1.4;
+    grid-row: 2/2;
+    grid-column: 2/2;
+    text-align: justify;
+}
+
+.service{
+    height: 400px;
+    grid-row: 2/2;
+    justify-self: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    color: gold;
+    background-color: black;
+    padding-left: 100px;
+
+}
+
+/* Contact Form*/
+
+.contact{
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 700px 700px;
+    justify-content: center;
+    height: 700px;
+}
+
+.contact-para{
+    width: 500px;
+    font-size: 15pt;
+    line-height: 1.4;
+    justify-self: center;
+    background-color: black;
+    color: gold;
+    height: 250px;
+    padding: 40px;
+    text-align: justify;
+}
+
+form{
+    padding-top: 25px;
+    
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    border: solid 3px black;
+}
+
+label{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 15pt;
+
+}
+
+.submit{
+    padding: 10px;
+    margin-top: 15px;
+    background-color: gold;
+    border-radius: 10px;
+}
+
+fieldset label input{
+    width: 250px;
+    height: 25px;
+}
+
+
+
+/* About Page*/
+
+.history{
+    display: grid;
+    grid-template-rows: 200px 400px 150px 400px;
+    grid-template-columns: 700px 700px;
+    justify-content: center;
+   margin-bottom: 100px;
+
+}
+
+.information{
+    font-size: 16pt;
+    line-height: 1.4;
+    width: 600px;
+    margin: 0;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.about{
+    justify-self: center;
+    height: 350px;
+
+}
+
+.history .location{
+    grid-row: 3 / 3;
+    grid-column: 1 / span 2;
+    border-bottom: 3px solid gold;
+    width: 50%;
+    text-align: center;
+}
+
+iframe{
+    grid-row: 4 / 4;
+    grid-column: 1 / 1;
+    justify-self: center;
+    height: 300px;
+}
+
+.history .front{
+    justify-self: center;
+    grid-row: 4 / 4;
+    grid-column: 2 / 2;
+}
+
+
+/* Team Page*/
+
+.whole{
+    display: grid;
+    grid-template-rows: 200px 500px 500px 500px 500px;
+    grid-template-columns: 400px 400px 400px;
+    justify-content: center;
+   
+
+}
+
+.team{
+    font-size: 50pt;
+    text-align: center;
+    border-bottom: solid 3px gold;
+    grid-column: 1 / span 3;
+}
+
+h3{
+    font-size: 35pt;
+    grid-column: 1/ span 3;
+    justify-self: center;
+    align-self: self-end;
+}
+
+.management{
+    grid-row: 2 / 2;
+    grid-column: 1 / span 3;
+    justify-self: center;
+}
+
+.management p{
+    text-align: center;
+    font-size: 18pt;
+
+}
+
+.manager{
+    height: 250px;
+    border-radius: 150px;
+}
+
+.sales{
+    grid-row: 3 / 3;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 100px 250px 100px;
+}
+
+.salesone, .salestwo, .salesthree{
+    height: 250px;
+    border-radius: 150px;
+}
+
+.sales p{
+    text-align: center;
+    font-size: 18pt;
+
+}
+
+.salesone{
+    grid-row: 2 / 2;
+    justify-self: center;
+}
+
+.salestwo{
+    justify-self: center;
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+}
+
+.salesthree{
+    grid-row: 2 / 2;
+    grid-column: 3 / 3;
+    justify-self: center;
+}
+
+.driver{
+    grid-row: 4 / 4;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 100px 250px 100px;
+
+}
+
+.driver h3 {
+    text-align: center;
+}
+
+.driverone, .drivertwo, .driverthree{
+    height: 250px;
+    border-radius: 150px;
+}
+
+.driverone{
+    justify-self: center;
+}
+
+.drivertwo{
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    justify-self: center;
+}
+
+.driverthree{
+    grid-row: 2 / 2;
+    grid-column: 3 / 3;
+    justify-self: center;
+}
+
+.driver p{
+    text-align: center;
+    font-size: 18pt;
+}
+
+.office{
+    grid-row: 5 / 5;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 100px 250px 100px;
+}
+
+.officeone, .officetwo{
+    height: 250px;
+    border-radius: 150px;
+    justify-self: center;
+}
+
+.officetwo{
+    grid-column: 3/3;
+    grid-row: 2/2;
+}
+
+.pam{
+    text-align: center;
+    font-size: 18pt;
+    grid-row: 3 / 3;
+    grid-column: 1 / 1;
+}
+
+.ana{
+    text-align: center;
+    font-size: 18pt;
+    grid-row: 3 / 3;
+    grid-column: 3 / 3;
+}
+
+/* Products */
+
+.product{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    justify-content: center;
+    row-gap: 20px;
+    margin-bottom: 30px;
+
+}
+
+.product h2{
+    grid-column: 1 / span 4;
+}
+
+.product a{
+    color: gold;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.product li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 250px;
+    list-style-type: none;
+    background-color: black;
+    margin-top: 20px;
+    margin-left: 25px;
+
+}
+
+.stainless{
+    grid-row: 5 / 5;
+    grid-column: 2 / span 2;
+    justify-self: center;
+    margin-right: 30px;
+
+}
+
+
+/* Fittings Page*/ /* Cleaners Page */
+
+.fittings, .cleaner{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 200px  100px 300px 100px 100px 300px 100px;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.fittings h4, .cleaner h4{
+    font-size: 35pt;
+    justify-self: center;
+    margin: 0;
+    align-self: self-end;
+}
+
+.fittings h2, .cleaner h2{
+    grid-column: 1/ span 3;
+}
+
+.fittings img, .cleaner img{
+    height: 275px;
+    justify-self: center;
+}
+
+.fittings p, .cleaner p{
+    justify-self: center;
+    border: 2px solid black;
+    border-radius: 50px;
+    width: 300px;
+    height: 50px;
+    align-content: center;
+    padding-left: 30px;
+}
+
+.t-title, .pd-tape{
+    grid-row: 2 / 2;
+    grid-column: 1 / 1;
+}
+
+.tees, .pdt{
+    grid-row: 3 / 3;
+    grid-column: 1 / 1;
+
+}
+
+.size-one, .pdt-size {
+    grid-row: 4 / 4;
+    grid-column: 1 / 1;
+}
+
+.nine, .gloves {
+    grid-row: 2 / 2;
+    grid-column: 2 / 2;
+}
+
+.ninety, .glv{
+    grid-row: 3 / 3;
+    grid-column: 2 / 2;
+}
+
+.size-two, .glv-size{
+    grid-row: 4 / 4;
+    grid-column: 2 / 2;
+}
+
+.c-title, .lub-cln{
+    grid-row: 2 / 2;
+    grid-column: 3 / 3;
+}
+
+.cross, .lub{
+    grid-row: 3 / 3;
+    grid-column: 3 / 3;
+}
+
+.size-three, .lub-size{
+    grid-row: 4 / 4;
+    grid-column: 3 / 3;
+}
+
+.snine, .hand-cln {
+    grid-row: 5 / 5;
+    grid-column: 1 / 1;
+}
+
+.street, .hcln{
+    grid-row: 6 / 6;
+    grid-column: 1 / 1;
+}
+
+.size-four, .hcln-size {
+    grid-row: 7 / 7;
+    grid-column: 1 / 1;
+}
+
+.fourty, .scrub-cln {
+    grid-row: 5 / 5;
+    grid-column: 2 / 2;
+}
+
+.fourfive, .scln{
+    grid-row: 6 / 6;
+    grid-column: 2 / 2;
+}
+
+.size-five, .scln-size {
+    grid-row: 7 / 7;
+    grid-column: 2 / 2;
+}
+
+.union {
+    grid-row: 5 / 5;
+    grid-column: 3 / 3;
+}
+
+.hex{
+    grid-row: 6 / 6;
+    grid-column: 3 / 3;
+}
+
+.size-six{
+    grid-row: 7 / 7;
+    grid-column: 3 / 3;
+}
+
+
+/* Studs Gaskets Page*/ /* Swage and Bull page*/ /*Weld Page*/ /*Hose fitting Layout for grid*/ 
+/* Regulator Layout for Grid*/ 
+
+
+.studs, .swages, .hose, .weld-fitting, .regulator{
+    display: grid;
+    grid-template-rows: 200px 100px 300px 100px;
+    justify-content: center;
+    grid-template-columns: 400px 400px 400px;
+    margin-bottom: 100px;
+}
+
+.studs h4, .swages h4, .tanks h4, .hose h4, .valves h4, .weld-fitting h4, .regulator h4{
+    font-size: 35pt;
+}
+
+.studs h2, .swages h2, .tanks h2, .hose h2, .valves h2, .weld-fitting h2, .regulator h2{
+    grid-row: 1 / 1;
+    grid-column: 1 / span 3;
+
+}
+
+.studs img, .swages img, .tanks img, .hose img, .valves img, .weld-fitting img, .regulator img{
+    height: 275px;
+}
+
+.sg-title, .bull, .w-fit, .flange, .r-reg, .b-joe, .l-controller{
+    align-self: center;
+    justify-self: center;
+}
+
+.b7, .bullp, .wf {
+    grid-row: 3 / 3;
+    grid-column: 1 / 1;
+    justify-self: center;
+}
+
+.studs p, .swages p, .weld-fitting p{
+    justify-self: center;
+    border: 2px solid black;
+    border-radius: 50px;
+    height: 50px;
+    width: 200px;
+    padding-left: 30px;
+    padding-top: 13px;
+}
+
+.b-size, .bp-size, .wf-size{
+    grid-row: 4 / 4;
+    grid-column: 1 / 1;
+}
+
+.gas, .swage-title, .flange{
+    grid-column: 3 / 3;
+    grid-row: 2 / 2;
+    justify-self: center;
+    align-self: center;
+}
+
+.gasket, .sw, .fl {
+    grid-row: 3 / 3;
+    grid-column: 3 / 3;
+    justify-self: center;
+}
+
+.g-size, .sw-size, .fl-size{
+    grid-column: 3 / 3;
+    grid-row: 4 / 4;
+}
+
+.weld-fitting .fl-size{
+    width: 300px;
+
+}
+
+
+/*Gauges Page*/ /*Hammer Union Page*/ /*Nipple Page*/ /*Stainless Fitting Page*/
+
+.gauges, .hammer, .nipple, .stainless{
+    display: grid;
+    grid-template-rows: 200px 100px 300px 100px;
+    grid-template-columns: 600px 600px;
+    justify-content: center;
+    margin-bottom: 100px;
+    align-items: center;
+}
+
+.gauges h2, .hammer h2, .nipple h2, .stainless h2{
+    grid-row: 1 / 1;
+}
+
+.gauges h4, .hammer h4, .nipple h4, .stainless h4{
+    font-size: 35pt;
+    grid-row: 2 / 2;
+    grid-column: 1 / span 2;
+    justify-self: center;
+}
+
+.gauges img, .hammer img, .nipple img, .stainless img{
+    grid-row: 3 / 3;
+    grid-column: 1 / span 2;
+    justify-self: center;
+    height: 275px;
+}
+
+.gg-size, .ham-size, .ni-size, .slf-size{
+    grid-row: 4 / 4;
+    grid-column: 1 / span 2;
+    justify-self: center;
+    border: 2px solid black;
+    border-radius: 50px;
+    height: 50px;
+    width: 300px;
+    padding-left: 45px;
+    padding-top: 12px;
+}
+
+
+
+/*Tank Product Page*/
+
+.tanks{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 200px 100px 300px 100px 100px 300px 100px ;
+    justify-content: center;
+    margin-bottom: 100px;
+
+}
+
+.tanks h4{
+    margin: 0;
+    justify-self: center;
+    align-self: end;
+}
+
+.tanks p{
+    justify-self: center;
+    border: 2px solid black;
+    border-radius: 50px;
+    height: 50px;
+    width: 300px;
+    padding-left: 45px;
+    padding-top: 12px;
+}
+
+.tanks img{
+    justify-self: center;
+}
+
+.dresser{
+    grid-row: 2 / 2;
+    grid-column: 1 / 1;
+
+}
+
+.sleeve{
+    grid-row: 3 / 3;
+    grid-column: 1 / 1;
+
+}
+
+.tanks .dresser-size{
+    grid-row: 4/4;
+    grid-column: 1/1;
+    padding-left: 95px;
+
+}
+
+.theif-hatch{
+    grid-row: 2 / 2;
+    grid-column: 2 / 2;
+}
+
+.theif{
+    grid-row: 3 / 3;
+    grid-column: 2 / 2;
+}
+
+.theif-size{
+    grid-row: 4 / 4;
+    grid-column: 2 / 2;
+}
+
+.stack-vent{
+    grid-row: 2 / 2;
+    grid-column: 3 / 3;
+}
+
+.stack{
+    grid-row: 3 / 3;
+    grid-column: 3 / 3;
+}
+
+.stack-size{
+    grid-row: 4 / 4;
+    grid-column: 3 / 3;
+}
+
+.sticks{
+    grid-row: 5 / 5;
+    grid-column: 2 / 2;
+}
+
+.soap{
+    grid-row: 6 / 6;
+    grid-column: 2 / 2;
+}
+
+.tanks .stick-size{
+    grid-row: 7 / 7;
+    grid-column: 2 / 2;
+    padding-left: 75px;
+}
+
+
+/* Hose fitting Page*/ /* Regulator Page*/
+
+.repair, .r-reg{
+    grid-row: 2 / 2;
+    grid-column: 1 / 1;
+    margin: 0;
+}
+
+.clamp, .rr{
+    grid-row: 3 / 3;
+    grid-column: 1 / 1;
+    justify-self: start;
+}
+
+.clamp-size, .rr-size{
+    grid-row: 4 / 4;
+    grid-column: 1 / 1;
+}
+
+.camlock{
+    grid-row: 2 / 2;
+    grid-column: 2 / 2;
+    margin: 0;
+    justify-self: end;
+}
+
+.b-joe{
+    grid-row: 2 / 2;
+    grid-column: 2 / 2;
+    margin: 0;
+}
+
+.lock, .bj{
+    grid-row: 3 / 3;
+    grid-column: 2 / 2;
+    justify-self: end;
+}
+
+.lock-size, .bj-size{
+    grid-row: 4 / 4;
+    grid-column: 2 / 2;
+}
+
+.adapter{
+    grid-row: 2 / 2;
+    grid-column: 3 / 3;
+    margin: 0;
+    justify-self: end;
+}
+
+.l-controller{
+    grid-row: 2 / 2;
+    grid-column: 3 / 3;
+    margin: 0;
+}
+
+.ha, .lc{
+    grid-row: 3 / 3;
+    grid-column: 3 / 3;
+    justify-self: end;
+}
+
+.ha-size, .lc-size{
+    grid-row: 4 / 4;
+    grid-column: 3 / 3;
+}
+
+.ha-size, .lock-size, .clamp-size, .regulator p{
+    justify-self: center;
+    border: 2px solid black;
+    border-radius: 50px;
+    height: 50px;
+    width: 300px;
+    padding-left: 95px;
+    padding-top: 12px;
+}
+
+
+/*Valves Page*/
+
+.valves{
+    display: grid;
+    grid-template-rows: 200px 100px 300px 100px 100px 300px 100px 100px 300px 100px;
+    grid-template-columns: 400px 400px 400px;
+    justify-content: center;
+    margin-bottom: 100px;
+
+}
+
+.valves h4{
+    margin: 0;
+    justify-self: center;
+    align-self: self-end;
+}
+ .valves p{
+    justify-self: center;
+    border: 2px solid black;
+    border-radius: 50px;
+    height: 50px;
+    width: 300px;
+    padding-left: 80px;
+    padding-top: 12px;
+ }
+
+ .valves .fv-size{
+    padding-left: 50px;
+ }
+
+ .c-valve{
+    grid-row: 2 / 2;
+    grid-column: 1 / 1;
+ }
+
+ .cv{
+    grid-row: 3 / 3;
+    grid-column: 1 / 1;
+    justify-self: center;
+ }
+
+ .cv-size{
+    grid-row: 4 / 4;
+    grid-column: 1 / 1;
+ }
+
+ .b-valve{
+    grid-row: 2 / 2;
+    grid-column: 2 / 2;
+ }
+
+ .bv{
+    grid-row: 3 / 3;
+    grid-column: 2 / 2;
+    justify-self: end;
+ }
+
+.bv-size{
+    grid-row: 4 / 4;
+    grid-column: 2 / 2;
+}
+
+.sb-valve{
+    grid-row: 2 / 2;
+    grid-column: 3 / 3;
+}
+
+.sbv{
+    grid-row: 3 / 3;
+    grid-column: 3 / 3;
+    justify-self: end;
+}
+
+.sbv-size{
+    grid-row: 4 / 4;
+    grid-column: 3 / 3;
+}
+
+.n-valve{
+    grid-row: 5 / 5;
+    grid-column: 1 / 1;
+    align-self: end;
+}
+
+.nv{
+    grid-row: 6 / 6;
+    grid-column: 1 / 1;
+    justify-self: center;
+}
+
+.nv-size{
+    grid-row: 7 / 7;
+    grid-column: 1 / 1;
+}
+
+.f-valve{
+    grid-row: 5 / 5;
+    grid-column: 2 / 2;
+}
+
+.fv{
+    grid-row: 6 / 6;
+    grid-column: 2 / 2;
+    justify-self: center;
+}
+
+.fv-size{
+    grid-row: 7 / 7;
+    grid-column: 2 / 2;
+}
+
+.br-valve{
+    grid-row: 5 / 5;
+    grid-column: 3 / 3;
+}
+
+.brv{
+    grid-row: 6 / 6;
+    grid-column: 3 / 3;
+    justify-self: center;
+}
+
+.brv-size{
+    grid-row: 7 / 7;
+    grid-column: 3 / 3;
+}
+
+.b-check{
+    grid-row: 8 / 8;
+    grid-column: 2 / 2;
+}
+
+.bc{
+    grid-row: 9 / 9;
+    grid-column: 2 / 2;
+    justify-self: center;
+}
+
+.bc-size{
+    grid-row: 10 / 10;
+    grid-column: 2 / 2;
+}
