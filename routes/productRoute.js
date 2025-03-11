@@ -2,7 +2,7 @@
 const express = require("express");
 const router = new express.Router();
 const utilities = require("../utilities");
-const productController = require("../../controllers/productController");
+const productController = require("../controllers/productController");
 
 // Routes
 router.get("/", (req, res) => {
