@@ -11,11 +11,13 @@ const app = express();
 const static = require("./routes/static");
 const expressLayouts = require("express-ejs-layouts");
 const session = require("express-session");
-const pool = require("./database");
+const pool = require("./database/");
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
+const utilities = require("./utilities");
 
 const productRoute = require("./routes/productRoute");
+const userRoute = require("./routes/userRoute");
 
 /* ***********************
  * View Engine and Templates
@@ -52,6 +54,8 @@ app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x
 
 app.use(cookieParser());
 
+app.use(utilities.checkJWTToken);
+
 /* ***********************
  * Routes
  *************************/
@@ -79,6 +83,9 @@ app.get("/contact", (req, res) => {
 
 // Product pages
 app.use("/products", productRoute);
+
+// User pages
+app.use("/user", userRoute);
 
 // File Not Found Route - must be last route in list
 app.use(async (req, res, next) => {

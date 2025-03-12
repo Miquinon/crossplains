@@ -1,0 +1,31 @@
+<% if (title) { %>
+    <h1><%= title %></h1>
+<% } else { res.redirect('/') } %>
+
+<%- messages() %>
+
+<% if (errors) { %>
+    <ul class="notice">
+    <% errors.array().forEach(error => { %>
+        <li><%= error.msg %></li>
+    <%  }) %>
+    </ul>
+<% } %>
+
+<div id="registerContainer">
+    <p>All fields are required.</p>
+    <form id="registerForm" action="/user/register" method="post">
+        <fieldset>
+            <label for="firstname">First name:</label>
+            <input type="text" name="firstname" id="firstname" size="10" required value="<%= locals.firstname %>"><br>
+            <label for="lastname">Last name:</label>
+            <input type="text" name="lastname" id="lastname" required value="<%= locals.lastname %>"><br>
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" id="email" required value="<%= locals.email %>"><br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{12,}$">
+            <div><i>Passwords must be minimum of 12 characters and include 1 capital letter, 1 number and 1 special character.</i></div>
+            <button type="submit">Register</button>
+        </fieldset>
+    </form>
+</div>
