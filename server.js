@@ -42,6 +42,12 @@ app.use(
   })
 );
 
+// Middleware to make user session data available in views
+app.use((req, res, next) => {
+  res.locals.user = req.session.user || null; // Store user data in res.locals
+  next();
+});
+
 // Express Messages Middleware
 app.use(require("connect-flash")());
 app.use(function (req, res, next) {
@@ -125,3 +131,5 @@ const host = process.env.HOST;
 app.listen(port, () => {
   console.log(`app listening on ${host}:${port}`);
 });
+
+

@@ -72,42 +72,91 @@ userController.registerUser = async function (req, res) {
 /* ****************************************
  *  Process login request
  * ************************************ */
+// userController.userLogin = async function (req, res) {
+//   const { email, password } = req.body;
+//   const userData = await userModel.getUserByEmail(email);
+//   if (!userData) {
+//     req.flash("notice", "Please check your credentials and try again.");
+//     res.status(400).render("./user/login", {
+//       title: "Login",
+//       nav,
+//       errors: null,
+//       email,
+//     });
+//     return;
+//   }
+//   try {
+//     if (await bcrypt.compare(password, userData.password)) {
+//       console.log("User data: ", userData);
+//       delete userData.password;
+//       const accessToken = jwt.sign(userData, process.env.ACCESS_TOKEN_SECRET, {
+//         expiresIn: 3600 * 1000,
+//       });
+//       if (process.env.NODE_ENV === "development") {
+//         res.cookie("jwt", accessToken, { httpOnly: true, maxAge: 3600 * 1000 });
+//       } else {
+//         res.cookie("jwt", accessToken, {
+//           httpOnly: true,
+//           secure: true,
+//           maxAge: 3600 * 1000,
+//         });
+//       }
+//       return res.redirect("/");
+//     } else {
+//       req.flash(
+//         "message notice",
+//         "Please check your credentials and try again."
+//       );
+//       res.status(400).render("./user/login", {
+//         title: "Login",
+//         nav,
+//         errors: null,
+//         email,
+//       });
+//     }
+//   } catch (error) {
+//     throw new Error("Access Forbidden");
+//   }
+// };
+
 userController.userLogin = async function (req, res) {
   const { email, password } = req.body;
   const userData = await userModel.getUserByEmail(email);
+
   if (!userData) {
     req.flash("notice", "Please check your credentials and try again.");
-    res.status(400).render("./user/login", {
+    return res.status(400).render("./user/login", {
       title: "Login",
       nav,
       errors: null,
       email,
     });
-    return;
   }
+
   try {
     if (await bcrypt.compare(password, userData.password)) {
       console.log("User data: ", userData);
-      delete userData.password;
+      delete userData.password; // Remove password for security
+
+      // Store user in session (for navigation update)
+      req.session.user = userData;
+
+      // Generate JWT token
       const accessToken = jwt.sign(userData, process.env.ACCESS_TOKEN_SECRET, {
-        expiresIn: 3600 * 1000,
+        expiresIn: "1h",
       });
-      if (process.env.NODE_ENV === "development") {
-        res.cookie("jwt", accessToken, { httpOnly: true, maxAge: 3600 * 1000 });
-      } else {
-        res.cookie("jwt", accessToken, {
-          httpOnly: true,
-          secure: true,
-          maxAge: 3600 * 1000,
-        });
-      }
+
+      // Set JWT in cookie
+      res.cookie("jwt", accessToken, {
+        httpOnly: true,
+        secure: process.env.NODE_ENV !== "development",
+        maxAge: 3600 * 1000, // 1 hour
+      });
+
       return res.redirect("/");
     } else {
-      req.flash(
-        "message notice",
-        "Please check your credentials and try again."
-      );
-      res.status(400).render("./user/login", {
+      req.flash("notice", "Please check your credentials and try again.");
+      return res.status(400).render("./user/login", {
         title: "Login",
         nav,
         errors: null,
@@ -115,8 +164,21 @@ userController.userLogin = async function (req, res) {
       });
     }
   } catch (error) {
-    throw new Error("Access Forbidden");
+    console.error("Login Error:", error);
+    req.flash("notice", "An error occurred while logging in.");
+    return res.redirect("/user/login");
   }
 };
+
+
+/*Log out*/ 
+
+userController.logout = (req, res) => {
+  res.clearCookie("jwt"); // Remove JWT token
+  req.session.destroy(() => {
+    res.redirect("/"); // Redirect to homepage after logout
+  });
+};
+
 
 module.exports = userController;

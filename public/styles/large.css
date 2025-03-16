@@ -7,6 +7,7 @@
   
 @import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap');
 
+
 p{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -70,6 +71,7 @@ h2{
 
 nav{
     width: 100%;
+    margin-bottom: 50px;
 
 }
 
@@ -979,7 +981,7 @@ h3{
 /*Login Screen*/
 
 #wrapper h1{
-text-align: center;
+    text-align: center;
 }
 
 #wrapper p a{
@@ -988,6 +990,7 @@ text-align: center;
     padding-left: 20px;
     padding-right: 20px;
     border: solid 2px black;
+    margin-bottom: 50px;
 }
 
 #loginContainer{
@@ -998,3 +1001,9 @@ text-align: center;
     color: gold;
     background-color: black;
 }
+
+#registerContainer{
+    justify-items: center;
+    margin-bottom: 50px;
+}
+
