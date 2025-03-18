@@ -281,7 +281,10 @@
     }
 
 
-/*testing*/
+/* Click effect for mobile */
+    .team-inner.flipped {
+        transform: rotateY(180deg);
+    }
 
 
 
