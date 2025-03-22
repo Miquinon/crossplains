@@ -118,6 +118,11 @@ app.use(async (err, req, res, next) => {
   });
 });
 
+/*Testing code */
+
+app.use("/products", productRoute);
+
+
 /* ***********************
  * Local Server Information
  * Values from .env (environment) file

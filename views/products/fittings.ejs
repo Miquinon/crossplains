@@ -4,8 +4,20 @@
 
     <h4 class="t-title">Tee</h4>
     <img src="/images/ab-3.jpg" alt="Tee's" class="tees">
-    <p class="size-one"> Material  &emsp;&emsp; Size  &emsp;&emsp;  Pounds</p>
+    <div class="dropdown-container">
+        <select id="material" name="material">
+        <option value="">Select Material</option>
+        </select>
 
+        <select id="size" name="size" disabled>
+        <option value="">Select Size</option>
+        </select>
+
+        <select id="pounds" name="pounds" disabled>
+        <option value="">Select Pounds</option>
+        </select>
+    </div>
+    
     <h4 class="nine">90</h4>
     <img src="/images/ab-4.jpg" alt="90's" class="ninety">
     <p class="size-two"> Material  &emsp;&emsp;  Size  &emsp;&emsp;  Pounds</p>
@@ -27,3 +39,4 @@
     <p class="size-six"> Material   &emsp;&emsp;  Size   &emsp;&emsp; Pounds</p>
 
 </div>
+<script src="/scripts/drop_down_tee.js"></script>
