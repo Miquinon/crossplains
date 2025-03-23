@@ -16,7 +16,7 @@ productController.getMaterials = async function (req, res, next) {
 
 productController.getMaterials90 = async function (req, res, next) {
   const { name } = req.query;
-  console.log("90")
+  // console.log("name")
   data = await productModel.getMaterials90(name)
   console.log(data)
   res.json(data);
