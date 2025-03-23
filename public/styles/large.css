@@ -1095,20 +1095,21 @@ h3{
     font-size: 12pt;
 }
 
-/*Drop Down Studs*/
+/*Drop Down Studs and swages and bull*/
 
-#size-gasket, #type-gasket, #size-b7, #type-b7, #size-gauge, #pounds-gauge{
+#size-gasket, #type-gasket, #size-b7, #type-b7, #size-gauge, #pounds-gauge, #size-bull, #pounds-bull,
+ #size-swage, #pounds-swage{
     height: 30px;
     font-size: 12pt;
 }
 
-.dropdown-container-studs{
+.dropdown-container-studs, .dropdown-container-bull{
     grid-row: 4;
     justify-self: center;
     
 }
 
-.dropdown-container-gasket{
+.dropdown-container-gasket, .dropdown-container-swage{
     grid-row: 4;
     grid-column: 3;
     justify-self: center;
