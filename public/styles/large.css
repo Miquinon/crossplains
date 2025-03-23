@@ -1083,4 +1083,11 @@ h3{
     padding: 15px;
 }
 
+.dropdown-container{
+    justify-self: center;
+}
 
+#material, #size, #pounds{
+    height: 30px;
+    font-size: 12pt;
+}
