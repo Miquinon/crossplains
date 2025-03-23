@@ -1097,7 +1097,7 @@ h3{
 
 /*Drop Down Studs*/
 
-#size-gasket, #type-gasket, #size-b7, #type-b7{
+#size-gasket, #type-gasket, #size-b7, #type-b7, #size-gauge, #pounds-gauge{
     height: 30px;
     font-size: 12pt;
 }
@@ -1113,4 +1113,11 @@ h3{
     grid-column: 3;
     justify-self: center;
     
+}
+
+
+
+.dropdown-container-gauges{
+    grid-column: 1/ span 2;
+    justify-self: center;
 }
