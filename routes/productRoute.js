@@ -71,16 +71,43 @@ router.get(
 // Get available sizes based on selected product name and material
 router.get("/get-sizes", async (req, res) => {
   try {
-    const { name, material } = req.query;
+    const { name, size } = req.query;
     const query =
-      "SELECT DISTINCT size FROM products WHERE name = $1 AND material = $2";
-    const result = await pool.query(query, [name, material]);
+      "SELECT DISTINCT size FROM products WHERE name = $1 AND size = $2";
+    const result = await pool.query(query, [name, size]);
     res.json(result.rows);
   } catch (error) {
     console.error("Error fetching sizes:", error);
     res.status(500).json({ error: "Database error" });
   }
 });
+
+router.get("/get-sizesB7", async (req, res) => {
+  try {
+    const { name } = req.query; // Only need name, not size
+    const query = "SELECT DISTINCT size FROM products WHERE name = $1";
+    const result = await pool.query(query, [name]);
+    res.json(result.rows);
+  } catch (error) {
+    console.error("Error fetching sizes:", error);
+    res.status(500).json({ error: "Database error" });
+  }
+});
+
+
+
+router.get("/get-types", async (req, res) => {
+  try {
+    const { name, size } = req.query;
+    const query = "SELECT DISTINCT type FROM products WHERE name = $1 AND size = $2";
+    const result = await pool.query(query, [name, size]);
+    res.json(result.rows);
+  } catch (error) {
+    console.error("Error fetching types:", error);
+    res.status(500).json({ error: "Database error" });
+  }
+});
+
 
 // Get available pounds based on selected name, material, and size
 router.get("/get-pounds", async (req, res) => {

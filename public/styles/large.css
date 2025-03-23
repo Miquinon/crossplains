@@ -1092,3 +1092,23 @@ h3{
     height: 30px;
     font-size: 12pt;
 }
+
+/*Drop Down Studs*/
+
+#size-gasket, #type-gasket, #size-b7, #type-b7{
+    height: 30px;
+    font-size: 12pt;
+}
+
+.dropdown-container-studs{
+    grid-row: 4;
+    justify-self: center;
+    
+}
+
+.dropdown-container-gasket{
+    grid-row: 4;
+    grid-column: 3;
+    justify-self: center;
+    
+}
