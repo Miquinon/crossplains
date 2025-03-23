@@ -1087,6 +1087,8 @@ h3{
     justify-self: center;
 }
 
+/*Fittings drop down*/
+
 #material, #size, #pounds, #material90, #size90, #pounds90, #material-cross, #size-cross, #pounds-cross,
 #material-street, #size-street, #pounds-street, #material45, #size45, #pounds45,#material-hex, #size-hex, #pounds-hex{
     height: 30px;
