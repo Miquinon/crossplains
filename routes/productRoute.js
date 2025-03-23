@@ -66,6 +66,8 @@ router.get(
   utilities.handleErrors(productController.getMaterials)
 );
 
+
+
 // Get available sizes based on selected product name and material
 router.get("/get-sizes", async (req, res) => {
   try {
@@ -88,6 +90,40 @@ router.get("/get-pounds", async (req, res) => {
       "SELECT DISTINCT pounds FROM products WHERE name = $1 AND material = $2 AND size = $3";
     const result = await pool.query(query, [name, material, size]);
     res.json(result.rows);
+  } catch (error) {
+    console.error("Error fetching pounds:", error);
+    res.status(500).json({ error: "Database error" });
+  }
+});
+
+
+router.get(
+  "/get-materials90",
+  utilities.handleErrors(productController.getMaterials90)
+);
+
+router.get("/get-sizes90", async (req, res) => {
+  try {
+    const { name, material } = req.query;
+    const query =
+      "SELECT DISTINCT size FROM products WHERE name = $1 AND material = $2";
+    const result = await pool.query(query, [name, material]);
+    res.json(result.rows);
+  } catch (error) {
+    console.error("Error fetching sizes:", error);
+    res.status(500).json({ error: "Database error" });
+  }
+});
+
+
+router.get("/get-pounds90", async (req, res) => {
+  try {
+    const { name, material, size } = req.query;
+    const query =
+      "SELECT DISTINCT pounds FROM products WHERE name = $1 AND material = $2 AND size = $3 ";
+    const result = await pool.query(query, [name, material, size]);
+    res.json(result.rows);
+    
   } catch (error) {
     console.error("Error fetching pounds:", error);
     res.status(500).json({ error: "Database error" });
