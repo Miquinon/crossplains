@@ -136,6 +136,20 @@ router.get("/get-pounds-gauges", async (req, res) => {
   }
 });
 
+
+router.get("/get-pressure", async (req, res) => {
+  try {
+    const { name, size } = req.query;
+    const query = "SELECT DISTINCT pressure FROM products WHERE name = $1 AND size = $2";
+    const result = await pool.query(query, [name, size]);
+    res.json(result.rows);
+  } catch (error) {
+    console.error("Error fetching pounds:", error);
+    res.status(500).json({ error: "Database error" });
+  }
+});
+
+
 router.get(
   "/get-materials90",
   utilities.handleErrors(productController.getMaterials90)
