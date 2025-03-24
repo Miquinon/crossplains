@@ -1083,7 +1083,8 @@ h3{
     padding: 15px;
 }
 
-.dropdown-container{
+.dropdown-container, .dropdown-container-sleeve, .dropdown-container-thief, .dropdown-container-stack,
+ .dropdown-container-soap{
     justify-self: center;
 }
 
@@ -1098,7 +1099,7 @@ h3{
 /*Drop Down Studs and swages and bull*/
 
 #size-gasket, #type-gasket, #size-b7, #type-b7, #size-gauge, #pounds-gauge, #size-bull, #pounds-bull,
- #size-swage, #pounds-swage, #size-hammer, #pressure-hammer{
+ #size-swage, #pounds-swage, #size-hammer, #pressure-hammer, #size-thief, #size-sleeve, #size-soap, #size-stack{
     height: 30px;
     font-size: 12pt;
 }
@@ -1121,4 +1122,9 @@ h3{
 .dropdown-container-gauges, .dropdown-container-hammer{
     grid-column: 1/ span 2;
     justify-self: center;
+}
+
+.dropdown-container-soap{
+    grid-row: 7;
+    grid-column: 2;
 }
