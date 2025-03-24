@@ -98,6 +98,18 @@ router.get("/get-sizesB7", async (req, res) => {
 });
 
 
+router.get("/get-part-number", async (req, res) => {
+  try {
+    const { name } = req.query; // Only need name, not size
+    const query = "SELECT DISTINCT part_number FROM products WHERE name = $1";
+    const result = await pool.query(query, [name]);
+    res.json(result.rows);
+  } catch (error) {
+    console.error("Error fetching size:", error);
+    res.status(500).json({ error: "Database error" });
+  }
+});
+
 
 router.get("/get-types", async (req, res) => {
   try {
