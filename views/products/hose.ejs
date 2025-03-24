@@ -4,14 +4,45 @@
 
     <h4 class="repair">Pipe Repair Clamps</h4>
     <img src="/images/ab-28.jpg" alt="pipe repair clamps" class="clamp">
-    <p class="clamp-size">&emsp;&emsp;  Size   &emsp;&emsp;</p>
+    <div class="dropdown-container-clamp">
+        
+        <select id="material-clamp" name="material" disabled>
+        <option value="">Select Size</option>
+        </select>
+
+        <select id="size-clamp" name="size" disabled>
+        <option value="">Select Type</option>
+        </select>
+    </div>
 
     <h4 class="camlock">Cam Lock Fittings</h4>
     <img src="/images/ab-29.jpg" alt="cam lock fittings" class="lock">
-    <p class="lock-size">&emsp;&emsp;  Size   &emsp;&emsp; </p>
+    <div class="dropdown-container-cam">
+        
+        <select id="material-cam" name="material" disabled>
+        <option value="">Select Size</option>
+        </select>
+
+        <select id="size-cam" name="size" disabled>
+        <option value="">Select Type</option>
+        </select>
+    </div>
 
     <h4 class="adapter">Hose Adapters</h4>
     <img src="/images/ab-34.jpg" alt="hose adapters" class="ha">
-    <p class="ha-size">&emsp;&emsp;  Size   &emsp;&emsp;</p>
+    <div class="dropdown-container-adapter">
+        
+        <select id="material-name" name="name" disabled>
+        <option value="">Select Name</option>
+        </select>
+
+        <select id="size-adapter" name="size-adapter" disabled>
+        <option value="">Select Size</option>
+        </select>
+    </div>
 
 </div>
+
+<script src="/scripts/drop_down_clamp.js"></script>
+<script src="/scripts/drop_down_cam.js"></script>
+<script src="/scripts/drop_down_adapters.js"></script>

@@ -1084,7 +1084,7 @@ h3{
 }
 
 .dropdown-container, .dropdown-container-sleeve, .dropdown-container-thief, .dropdown-container-stack,
- .dropdown-container-soap{
+ .dropdown-container-soap, .dropdown-container-clamp, .dropdown-container-cam, .dropdown-container-adapter{
     justify-self: center;
 }
 
@@ -1099,7 +1099,8 @@ h3{
 /*Drop Down Studs and swages and bull*/
 
 #size-gasket, #type-gasket, #size-b7, #type-b7, #size-gauge, #pounds-gauge, #size-bull, #pounds-bull,
- #size-swage, #pounds-swage, #size-hammer, #pressure-hammer, #size-thief, #size-sleeve, #size-soap, #size-stack{
+ #size-swage, #pounds-swage, #size-hammer, #pressure-hammer, #size-thief, #size-sleeve, #size-soap, #size-stack,
+ #material-clamp, #size-clamp, #material-cam, #size-cam{
     height: 30px;
     font-size: 12pt;
 }

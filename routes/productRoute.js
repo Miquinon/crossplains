@@ -66,7 +66,10 @@ router.get(
   utilities.handleErrors(productController.getMaterials)
 );
 
-
+router.get(
+  "/get-materials-adapter",
+  utilities.handleErrors(productController.getMaterialsAdapter)
+);
 
 // Get available sizes based on selected product name and material
 router.get("/get-sizes", async (req, res) => {
@@ -182,5 +185,8 @@ router.get("/get-pounds90", async (req, res) => {
     res.status(500).json({ error: "Database error" });
   }
 });
+
+
+
 
 module.exports = router;

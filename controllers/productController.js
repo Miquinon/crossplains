@@ -22,4 +22,14 @@ productController.getMaterials90 = async function (req, res, next) {
   res.json(data);
 };
 
+
+
+productController.getMaterialsAdapter = async function (req, res, next) {
+  const { name } = req.query;
+  console.log(name)
+  data = await productModel.getMaterialsAdapter(name)
+  console.log(data)
+  res.json(data);
+};
+
 module.exports = productController;
