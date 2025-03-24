@@ -1101,7 +1101,7 @@ h3{
 
 #size-gasket, #type-gasket, #size-b7, #type-b7, #size-gauge, #pounds-gauge, #size-bull, #pounds-bull,
  #size-swage, #pounds-swage, #size-hammer, #pressure-hammer, #size-thief, #size-sleeve, #size-soap, #size-stack,
- #material-clamp, #size-clamp, #material-cam, #size-cam{
+ #material-clamp, #size-clamp, #material-cam, #size-cam, #size-nipple, #pounds-nipple{
     height: 30px;
     font-size: 12pt;
 }
@@ -1121,7 +1121,7 @@ h3{
 
 
 
-.dropdown-container-gauges, .dropdown-container-hammer{
+.dropdown-container-gauges, .dropdown-container-hammer, .dropdown-container-nipple{
     grid-column: 1/ span 2;
     justify-self: center;
 }
