@@ -4,15 +4,40 @@
 
     <h4 class="r-reg">Regulator</h4>
     <img src="/images/ab-26.jpg" alt="regulator" class="rr">
-    <p class="rr-size">Size   &emsp;&emsp; Pressure  &emsp;&emsp;</p>
+    <div class="dropdown-container">
+        
+        <select id="part-reg" name="part-number" disabled>
+        <option value="">Select Part #</option>
+        </select>
+
+    </div>
 
     <h4 class="b-joe">Big Joe</h4>
     <img src="/images/ab-31.jpg" alt="big joe" class="bj">
-    <p class="bj-size">Size   &emsp;&emsp; Pounds  &emsp;&emsp;</p>
+    <div class="dropdown-container">
+        <select id="brand-joe" name="brand">
+        <option value="">Select Brand</option>
+        </select>
+
+        <select id="spring-range" name="size" disabled>
+        <option value="">Select Size</option>
+        </select>
+
+        <select id="size-joe" name="pounds" disabled>
+        <option value="">Select Pounds</option>
+        </select>
+    </div>
 
     <h4 class="l-controller">Level Controller</h4>
     <img src="/images/ab-32.jpg" alt="level controller" class="lc">
-    <p class="lc-size">  &emsp;&emsp; Size   &emsp;&emsp;</p>
-
+    <div class="dropdown-container">
+        <select id="brand-level" name="brand">
+        <option value="">Select Brand</option>
+        </select>
+    </div>
 
 </div>
+
+<script src="/scripts/p-regulator/drop_down_regulator.js"></script>
+<script src="/scripts/p-regulator/drop_down_b-joe.js"></script>
+<script src="/scripts/p-regulator/drop_down_level-c.js"></script>

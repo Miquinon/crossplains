@@ -1101,7 +1101,8 @@ h3{
 
 #size-gasket, #type-gasket, #size-b7, #type-b7, #size-gauge, #pounds-gauge, #size-bull, #pounds-bull,
  #size-swage, #pounds-swage, #size-hammer, #pressure-hammer, #size-thief, #size-sleeve, #size-soap, #size-stack,
- #material-clamp, #size-clamp, #material-cam, #size-cam, #size-nipple, #pounds-nipple{
+ #material-clamp, #size-clamp, #material-cam, #size-cam, #size-nipple, #pounds-nipple, #part-reg, #brand-joe, 
+ #spring-range, #size-joe, #brand-level{
     height: 30px;
     font-size: 12pt;
 }
