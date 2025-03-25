@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const brandDropdown = document.getElementById("brand-level");
+    const brandDropdown = document.getElementById("brand-scrub");
 
-    const productNameLevelC = "level controller"; // Set dynamically if needed
+    const productNameScrubs = "hand scrub"; // Set dynamically if needed
 
     // Fetch Brands
-    fetch(`/products/get-brands?name=${productNameLevelC}`)
+    fetch(`/products/get-brands?name=${productNameScrubs}`)
         .then((res) => {
             if (!res.ok) {
                 throw new Error(`HTTP error! Status: ${res.status}`);
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .then((data) => {
             console.log("Brands:", data);
             if (data.length === 0) {
-                console.warn("No brands found for:", productNameLevelC);
+                console.warn("No brands found for:", productNameScrubs);
                 return;
             }
 

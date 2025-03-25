@@ -109,6 +109,20 @@ router.get("/get-spring-ranges", async (req, res) => {
   }
 });
 
+router.get("/get-sizes-dope", async (req, res) => {
+  try {
+    const { name, brand } = req.query;
+    const query = "SELECT DISTINCT size FROM products WHERE name = $1 AND brand = $2";
+    const result = await pool.query(query, [name, brand]);
+    res.json(result.rows);
+  } catch (error) {
+    console.error("Error fetching sizes:", error);
+    res.status(500).json({ error: "Database error" });
+  }
+});
+
+
+
 router.get("/get-sizes-spring", async (req, res) => {
   try {
     const { name, brand, spring_range } = req.query;

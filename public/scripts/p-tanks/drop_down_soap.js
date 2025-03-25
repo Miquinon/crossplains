@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const sizeDropdownSoap = document.getElementById("size-soap");
+    const sizeDropdownSoap = document.getElementById("size-stick");
 
-    const productNameSoap = "soap ticks"; // Set dynamically if needed
+    const productNameStick = "soap ticks"; // Set dynamically if needed
 
     // Fetch Sizes Only
-    fetch(`/products/get-sizesB7?name=${productNameSoap}`)
+    fetch(`/products/get-sizesB7?name=${productNameStick}`)
         .then((res) => res.json())
         .then((data) => {
             data.forEach((item) => {

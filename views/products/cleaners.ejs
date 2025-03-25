@@ -3,21 +3,60 @@
 
   <h4 class="pd-tape">Pipe Dope & Tape</h4>
   <img src="/images/ab-35.jpg" alt="pipe dope and tape" class="pdt" />
-  <p class="pdt-size">&emsp;&emsp;Quantity &emsp;&emsp;</p>
+    <div class="dropdown-container">
+      <select id="brand-dope" name="brand">
+      <option value="">Select Brand</option>
+      </select>
+
+      <select id="size-dope" name="pounds" disabled>
+      <option value="">Select Size</option>
+      </select>
+    </div>
 
   <h4 class="gloves">Gloves</h4>
   <img src="/images/ab-36.jpg" alt="gloves" class="glv" />
-  <p class="glv-size">&emsp;&emsp; Brand &emsp;&emsp;</p>
+    <div class="dropdown-container">
+      <select id="brand-gloves" name="brand">
+      <option value="">Select Brand</option>
+      </select>
+
+      <select id="size-gloves" name="pounds" disabled>
+      <option value="">Select Size</option>
+      </select>
+    </div>
 
   <h4 class="lub-cln">Lubricants & Cleaners</h4>
   <img src="/images/ab-37.jpg" alt="lubricants and cleaners" class="lub" />
-  <p class="lub-size">Brand &emsp;&emsp; Quantity &emsp;&emsp;</p>
+    <div class="dropdown-container">
+      <select id="brand-spray" name="brand">
+      <option value="">Select Brand</option>
+      </select>
+    </div>
 
   <h4 class="hand-cln">Hand Cleaners</h4>
   <img src="/images/ab-38.jpg" alt="hand cleaner" class="hcln" />
-  <p class="hcln-size">Brand &emsp;&emsp; Size &emsp;&emsp;</p>
+    <div class="dropdown-container-soap">
+      <select id="brand-soap" name="brand">
+      <option value="">Select Brand</option>
+      </select>
+
+      <select id="size-soap" name="size" disabled>
+      <option value="">Select Size</option>
+      </select>
+    </div>
 
   <h4 class="scrub-cln">Hand Scrubs</h4>
   <img src="/images/ab-39.jpg" alt="hand scrubs" class="scln" />
-  <p class="scln-size">&emsp;&emsp; Brand &emsp;&emsp;</p>
+    <div class="dropdown-container-scrub">
+      <select id="brand-scrub" name="brand">
+      <option value="">Select Brand</option>
+      </select>
+    </div>
+
 </div>
+
+<script src="/scripts/drop_down_dope.js"></script>
+<script src="/scripts/drop_down_gloves.js"></script>
+<script src="/scripts/drop_down_cleaners.js"></script>
+<script src="/scripts/drop_down_hand-soap.js"></script>
+<script src="/scripts/drop_down_scrubs.js"></script>

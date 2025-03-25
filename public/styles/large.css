@@ -1084,7 +1084,7 @@ h3{
 }
 
 .dropdown-container, .dropdown-container-sleeve, .dropdown-container-thief, .dropdown-container-stack,
- .dropdown-container-soap, .dropdown-container-clamp, .dropdown-container-cam, .dropdown-container-adapter{
+ .dropdown-container-stick, .dropdown-container-clamp, .dropdown-container-cam, .dropdown-container-adapter,.dropdown-container-scrub{
     justify-self: center;
 }
 
@@ -1092,7 +1092,8 @@ h3{
 
 #material, #size, #pounds, #material90, #size90, #pounds90, #material-cross, #size-cross, #pounds-cross,
 #material-street, #size-street, #pounds-street, #material45, #size45, #pounds45,#material-hex, #size-hex, #pounds-hex,
-#part-checkv, #part-ballv, #part-squarev, #part-needlev, #part-flangev, #size-brassv, #size-ballc, #pounds-ballc{
+#part-checkv, #part-ballv, #part-squarev, #part-needlev, #part-flangev, #size-brassv, #size-ballc, #pounds-ballc, #size-soap,
+#brand-scrub, #size-stick{
     height: 30px;
     font-size: 12pt;
 }
@@ -1102,7 +1103,7 @@ h3{
 #size-gasket, #type-gasket, #size-b7, #type-b7, #size-gauge, #pounds-gauge, #size-bull, #pounds-bull,
  #size-swage, #pounds-swage, #size-hammer, #pressure-hammer, #size-thief, #size-sleeve, #size-soap, #size-stack,
  #material-clamp, #size-clamp, #material-cam, #size-cam, #size-nipple, #pounds-nipple, #part-reg, #brand-joe, 
- #spring-range, #size-joe, #brand-level{
+ #spring-range, #size-joe, #brand-level, #brand-dope, #size-dope, #brand-gloves, #size-gloves, #brand-spray, #brand-soap{
     height: 30px;
     font-size: 12pt;
 }
@@ -1127,7 +1128,7 @@ h3{
     justify-self: center;
 }
 
-.dropdown-container-soap{
+.dropdown-container-stick, .dropdown-container-scrub{ 
     grid-row: 7;
     grid-column: 2;
 }
@@ -1136,5 +1137,11 @@ h3{
 .dropdown-container-ballc{
     grid-row: 10;
     grid-column: 2;
+    justify-self: center;
+}
+
+.dropdown-container-soap{
+    grid-row: 7;
+    grid-column: 1;
     justify-self: center;
 }
