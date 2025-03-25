@@ -1093,7 +1093,7 @@ h3{
 #material, #size, #pounds, #material90, #size90, #pounds90, #material-cross, #size-cross, #pounds-cross,
 #material-street, #size-street, #pounds-street, #material45, #size45, #pounds45,#material-hex, #size-hex, #pounds-hex,
 #part-checkv, #part-ballv, #part-squarev, #part-needlev, #part-flangev, #size-brassv, #size-ballc, #pounds-ballc, #size-soap,
-#brand-scrub, #size-stick{
+#brand-scrub, #size-stick, #part-stainless{
     height: 30px;
     font-size: 12pt;
 }
@@ -1123,7 +1123,7 @@ h3{
 
 
 
-.dropdown-container-gauges, .dropdown-container-hammer, .dropdown-container-nipple{
+.dropdown-container-gauges, .dropdown-container-hammer, .dropdown-container-nipple, .dropdown-container-stainless{
     grid-column: 1/ span 2;
     justify-self: center;
 }
