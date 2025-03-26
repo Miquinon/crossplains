@@ -20,7 +20,7 @@
                         <td><%= item.updated_at %></td>
                         <td>
                             <form action="/cart/remove" method="POST">
-                                <input type="hidden" name="userId" value="<%= user.user_id %>">
+                                <input type="hidden" name="user_id" value="<%= user.user_id %>">
                                 <input type="hidden" name="itemName" value="<%= item.item_name %>">
                                 <button type="submit">Remove</button>
                             </form>
