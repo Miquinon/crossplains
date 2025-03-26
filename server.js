@@ -15,7 +15,7 @@ const pool = require("./database/");
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const utilities = require("./utilities");
-
+const cartRoute = require("./routes/cartRoute");
 const productRoute = require("./routes/productRoute");
 const userRoute = require("./routes/userRoute");
 
@@ -92,6 +92,10 @@ app.use("/products", productRoute);
 
 // User pages
 app.use("/user", userRoute);
+
+
+app.use("/cart", cartRoute);
+
 
 // File Not Found Route - must be last route in list
 app.use(async (req, res, next) => {

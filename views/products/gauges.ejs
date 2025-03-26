@@ -1,4 +1,4 @@
-<div class="gauges">
+<!-- <div class="gauges">
 
     <h2 class="g">Gauges</h2>
 
@@ -15,6 +15,43 @@
         </select>
     </div>
 
+</div> -->
+
+
+<div class="gauges">
+    <h2 class="g">Gauges</h2>
+
+    <h4>Liquid Filled</h4>
+    <img src="/images/ab-33.jpg" alt="liquid filled gauges">
+
+    <div class="dropdown-container-gauges">
+        <form id="cartForm" action="/cart/add" method="POST">
+            <input type="hidden" name="user_id" value="<%= user ? user.user_id : '' %>">
+            <input type="hidden" name="item_name" value="Liquid Filled Gauge">
+            
+            <!-- Hidden Inputs to Store Selected Values -->
+            <input type="hidden" id="selected-size" name="size">
+            <input type="hidden" id="selected-pounds" name="pounds">
+
+
+            <label for="size-gauge">Size:</label>
+            <select id="size-gauge" name="size" required>
+        
+            </select>
+
+            <label for="pounds-gauge">Pounds:</label>
+            <select id="pounds-gauge" name="pounds" required>
+                
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" value="1" min="1" required>
+
+            <button type="submit">Add to Cart</button>
+        </form>
+    </div>
 </div>
 
 <script src="/scripts/drop_down_gauges.js"></script>
+
+

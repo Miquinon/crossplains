@@ -74,10 +74,10 @@ router.get(
 // Get available sizes based on selected product name and material
 router.get("/get-sizes", async (req, res) => {
   try {
-    const { name, size } = req.query;
+    const { name, material } = req.query;
     const query =
-      "SELECT DISTINCT size FROM products WHERE name = $1 AND size = $2";
-    const result = await pool.query(query, [name, size]);
+      "SELECT DISTINCT size FROM products WHERE name = $1 AND material = $2";
+    const result = await pool.query(query, [name, material]);
     res.json(result.rows);
   } catch (error) {
     console.error("Error fetching sizes:", error);

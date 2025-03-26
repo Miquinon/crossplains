@@ -29,6 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
       fetch(`/products/get-sizes?name=${productName}&material=${this.value}`)
         .then((res) => res.json())
         .then((data) => {
+          console.log(2)
+          console.log(data)
           data.forEach((item) => {
             const option = document.createElement("option");
             option.value = item.size;
