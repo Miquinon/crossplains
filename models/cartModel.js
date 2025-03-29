@@ -134,6 +134,18 @@ const CartModel = {
         }
     },
 
+    async removeItem(user_id, item_name) {
+        try {
+            const sql = `DELETE FROM cart WHERE user_id = $1 AND item_name = $2 RETURNING *;`;
+            const result = await pool.query(sql, [parseInt(user_id), item_name]);
+            return result.rows[0];
+        } catch (error) {
+            console.error("Error removing item from cart:", error);
+            throw error;
+        }
+    },
+
+
     async getCart(user_id) {
         try {
             const sql = `SELECT * FROM cart WHERE user_id = $1;`;
@@ -162,16 +174,7 @@ const CartModel = {
         }
     },
 
-    async removeItem(user_id, item_name) {
-        try {
-            const sql = `DELETE FROM cart WHERE user_id = $1 AND item_name = $2 RETURNING *;`;
-            const result = await pool.query(sql, [user_id, item_name]);
-            return result.rows[0];
-        } catch (error) {
-            console.error("Error removing item from cart:", error);
-            throw error;
-        }
-    },
+    
 
     async clearCart(user_id) {
         try {

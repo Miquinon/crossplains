@@ -50,8 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
-
+    
 
 // document.addEventListener("DOMContentLoaded", function () {
 //     const sizeDropdownGauges = document.getElementById("size-gauge");
