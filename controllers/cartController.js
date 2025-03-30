@@ -1,20 +1,6 @@
 const CartModel = require("../models/cartModel");
 
 const CartController = {
-    async addItem(req, res) {
-        try {
-            console.log("Request received at /cart/add"); // Debugging
-            console.log("Request body:", req.body);
-            const { user_id, item_name, quantity } = req.body;
-            const item = await CartModel.addItem(user_id, item_name, quantity || 1);
-            
-            res.redirect(`/cart/${user_id}`);
-        } catch (error) {
-            res.status(500).json({ success: false, error: error.message });
-        }
-    },
-    
-    
 
     async getCart(req, res) {
         try {
@@ -33,13 +19,28 @@ const CartController = {
             res.status(500).json({ success: false, error: error.message });
         }
     },
+
+
+
+    async addItem(req, res) {
+        try {
+            console.log("Request received at /cart/add"); // Debugging
+            console.log("Request body:", req.body);
+            const { user_id, item_name, item_size, item_pounds, quantity } = req.body;
+            const item = await CartModel.addItem(user_id, item_name, item_size, item_pounds, quantity || 1);
+            
+            res.redirect(`/cart/${user_id}`);
+        } catch (error) {
+            res.status(500).json({ success: false, error: error.message });
+        }
+    },
     
     
 
     async updateItem(req, res) {
         try {
-            const { user_id, item_name, quantity } = req.body;
-            const item = await CartModel.updateItem(user_id, item_name, quantity);
+            const { user_id, item_name, item_size, quantity } = req.body;
+            const item = await CartModel.updateItem(user_id, item_name, item_size, quantity);
             res.status(200).json({ success: true, item });
         } catch (error) {
             res.status(500).json({ success: false, error: error.message });
