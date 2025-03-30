@@ -39,8 +39,8 @@ const CartController = {
 
     async updateItem(req, res) {
         try {
-            const { user_id, item_name, item_size, quantity } = req.body;
-            const item = await CartModel.updateItem(user_id, item_name, item_size, quantity);
+            const { user_id, item_name, item_size, item_pounds, quantity } = req.body;
+            const item = await CartModel.updateItem(user_id, item_name, item_size, item_pounds, quantity);
             res.status(200).json({ success: true, item });
         } catch (error) {
             res.status(500).json({ success: false, error: error.message });

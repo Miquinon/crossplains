@@ -22,7 +22,7 @@
                         <td><%= item.quantity %></td>
                         <!-- <td><%= item.created_at %></td>
                         <td><%= item.updated_at %></td> -->
-                        <td>
+                    
                             <form action="/cart/remove" method="POST">
                                 <input type="hidden" name="user_id" value="<%= user.user_id %>">
                                 <input type="hidden" name="item_name" value="<%= item.item_name %>">
