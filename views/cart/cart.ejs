@@ -28,7 +28,7 @@
                                 <input type="hidden" name="item_name" value="<%= item.item_name %>">
                                 <input type="hidden" id="selected-size" name="item_size" value="<%= item.item_size %>">
                                 <input type="hidden" id="selected-pounds" name="item_pounds" value="<%= item.item_pounds %>">
-                                <button class="remove-item" data_user_id="" data_item_name="" data_item_size="" type="submit">Remove</button>
+                              <td>  <button class="remove-item" data_user_id="<%= user.user_id %>" data_item_name="<%= item.item_name %>" type="submit">Remove</button> </td>
                             </form>
                         </td>
                     </tr>

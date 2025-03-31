@@ -97,7 +97,7 @@ const pool = require("../database"); // Ensure you have the correct database con
 
 const CartModel = {
     async addItem(user_id, item_name, item_size, item_pounds, quantity) {
-        if (!user_id || !item_name || !item_size || item_pounds|| quantity === null || quantity === undefined) {
+        if (!user_id || !item_name || !item_size || !item_pounds|| quantity === null || quantity === undefined) {
             throw new Error("Invalid input: user_id, item_name, item_size, item_pounds, and quantity are required.");
         }
         try {
