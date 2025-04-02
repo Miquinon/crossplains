@@ -20,17 +20,8 @@
                         <td><%= item.item_size %></td>
                         <td><%= item.item_pounds %></td>
                         <td><%= item.quantity %></td>
-                        <!-- <td><%= item.created_at %></td>
-                        <td><%= item.updated_at %></td> -->
-                    
-                            <form action="/cart/remove" method="POST">
-                                <input type="hidden" name="user_id" value="<%= user.user_id %>">
-                                <input type="hidden" name="item_name" value="<%= item.item_name %>">
-                                <input type="hidden" id="selected-size" name="item_size" value="<%= item.item_size %>">
-                                <input type="hidden" id="selected-pounds" name="item_pounds" value="<%= item.item_pounds %>">
-                              <td>  <button class="remove-item" data_user_id="<%= user.user_id %>" data_item_name="<%= item.item_name %>" type="submit">Remove</button> </td>
-                            </form>
-                        </td>
+                        <!-- <td><%= item.created_at %></td> -->
+                        <td><button class="remove-item" data_user_id="<%= user.user_id %>" data_item_name="<%= item.item_name %>" data_item_size="<%= item.item_size %>" data_item_pounds="<%= item.item_pounds %>">Remove</button></td>
                     </tr>
                 <% }) %>
             </tbody>

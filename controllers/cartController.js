@@ -49,9 +49,9 @@ const CartController = {
 
     async removeItem(req, res) {
         try {
-            const { user_id, item_name } = req.body;
+            const { user_id, item_name, item_size, item_pounds } = req.body;
             // const { user_id, item_name } = req.query; 
-            const item = await CartModel.removeItem(user_id, item_name);
+            const item = await CartModel.removeItem(user_id, item_name, item_size, item_pounds);
             res.status(200).json({ success: true, item });
         } catch (error) {
             res.status(500).json({ success: false, error: error.message });

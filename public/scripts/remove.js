@@ -4,18 +4,22 @@ document.addEventListener("DOMContentLoaded", function () {
       button.addEventListener("click", function () {
         const userId = this.getAttribute("data_user_id");
         const itemName = this.getAttribute("data_item_name");
+        const itemSize = this.getAttribute("data_item_size");
+        const itemPounds = this.getAttribute("data_item_pounds");
   
-        if (!userId || !itemName) {
+        if (!userId || !itemName || !itemSize || !itemPounds) {
           alert("Missing user ID or item name");
           return;
         }
   
+         // `/cart/remove?user_id=${userId}&item_name=${encodeURIComponent(itemName)}&item_size=${encodeURIComponent(itemSize)}&item_pounds=${encodeURIComponent(itemPounds)}`,
+         
         fetch(
-          `/cart/remove?user_id=${userId}&item_name=${encodeURIComponent(itemName)}`,
+          `/cart/remove`,
           {
             method: "DELETE",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ user_id: userId, item_name: itemName }), // Corrected body placement
+            body: JSON.stringify({ user_id: userId, item_name: itemName, item_size: itemSize, item_pounds: itemPounds}), // Corrected body placement
           }
         )
           .then((response) => response.json())

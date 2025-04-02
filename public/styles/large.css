@@ -1145,3 +1145,23 @@ h3{
     grid-column: 1;
     justify-self: center;
 }
+
+
+/*Cart table*/
+
+table{
+    border: 3px solid black;
+    padding: 15px;
+    justify-self: center;
+    margin: 20px;
+}
+
+th{
+    width: 150px;
+    padding: 15px;
+
+}
+
+tbody{
+    text-align: center;
+}

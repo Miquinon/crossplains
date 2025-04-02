@@ -135,10 +135,10 @@ const CartModel = {
         }
     },
 
-    async removeItem(user_id, item_name) {
+    async removeItem(user_id, item_name, item_size, item_pounds) {
         try {
-            const sql = `DELETE FROM cart WHERE user_id = $1 AND item_name = $2 RETURNING *;`;
-            const result = await pool.query(sql, [parseInt(user_id), item_name]);
+            const sql = `DELETE FROM cart WHERE user_id = $1 AND item_name = $2 AND item_size = $3 AND item_pounds = $4 RETURNING *;`;
+            const result = await pool.query(sql, [parseInt(user_id), item_name, item_size, item_pounds]);
             return result.rows[0];
         } catch (error) {
             console.error("Error removing item from cart:", error);
