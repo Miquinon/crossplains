@@ -1165,3 +1165,33 @@ th{
 tbody{
     text-align: center;
 }
+
+/*Cart Links*/
+
+#back-pro{
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    background-color: black;
+    color: gold;
+    font-size: 15pt;
+    text-decoration: none;
+    width: 185px;
+    position: relative;
+    bottom: 50px;
+    left: 450px;
+    text-align: center;
+}
+
+#sub-cart{
+    justify-self: center;
+}
+
+#sub{
+    width: 150px;
+    height: 40px;
+    background-color: gold;
+    font-size: 15pt;
+    padding: 5px;
+}
+

@@ -27,13 +27,13 @@
             </tbody>
         </table>
 
-        <form action="/cart/submit" method="POST">
+        <form action="/cart/submit" method="POST" id="sub-cart">
             <input type="hidden" name="userId" value="<%= user.user_id %>">
-            <button type="submit">Submit Cart</button>
+            <button type="submit" id="sub">Submit Cart</button>
         </form>
     <% } else { %>
         <p>Your cart is empty.</p>
     <% } %>
 
-    <a href="/products">Back to Products</a>
+    <a href="/products" id="back-pro">Back to Products</a>
     <script src="/scripts/remove.js"></script>
