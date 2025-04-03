@@ -286,12 +286,24 @@
         transform: rotateY(180deg);
     }
 
+/* Cart Page*/
 
+th{
+    width: 0;
+}
 
+#back-pro{
+    left: 50px;
+}
 
+#sub-cart{
+    justify-self: end;
+    margin-right: 50px;
+}
 
-
-
+table{
+    width: 600px;
+}
 
 
 

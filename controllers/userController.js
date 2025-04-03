@@ -69,55 +69,7 @@ userController.registerUser = async function (req, res) {
   }
 };
 
-/* ****************************************
- *  Process login request
- * ************************************ */
-// userController.userLogin = async function (req, res) {
-//   const { email, password } = req.body;
-//   const userData = await userModel.getUserByEmail(email);
-//   if (!userData) {
-//     req.flash("notice", "Please check your credentials and try again.");
-//     res.status(400).render("./user/login", {
-//       title: "Login",
-//       nav,
-//       errors: null,
-//       email,
-//     });
-//     return;
-//   }
-//   try {
-//     if (await bcrypt.compare(password, userData.password)) {
-//       console.log("User data: ", userData);
-//       delete userData.password;
-//       const accessToken = jwt.sign(userData, process.env.ACCESS_TOKEN_SECRET, {
-//         expiresIn: 3600 * 1000,
-//       });
-//       if (process.env.NODE_ENV === "development") {
-//         res.cookie("jwt", accessToken, { httpOnly: true, maxAge: 3600 * 1000 });
-//       } else {
-//         res.cookie("jwt", accessToken, {
-//           httpOnly: true,
-//           secure: true,
-//           maxAge: 3600 * 1000,
-//         });
-//       }
-//       return res.redirect("/");
-//     } else {
-//       req.flash(
-//         "message notice",
-//         "Please check your credentials and try again."
-//       );
-//       res.status(400).render("./user/login", {
-//         title: "Login",
-//         nav,
-//         errors: null,
-//         email,
-//       });
-//     }
-//   } catch (error) {
-//     throw new Error("Access Forbidden");
-//   }
-// };
+
 
 userController.userLogin = async function (req, res) {
   const { email, password } = req.body;

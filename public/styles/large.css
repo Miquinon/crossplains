@@ -1154,12 +1154,29 @@ table{
     padding: 15px;
     justify-self: center;
     margin: 20px;
+    width: 1000px;
 }
 
-th{
-    width: 150px;
+thead{
+    text-align: center;
+    display: flex;
+    justify-content: end;
+
+}
+
+tbody{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+th{ width: 175px;
     padding: 15px;
 
+}
+
+td{
+    width: 175px;
 }
 
 tbody{
@@ -1179,7 +1196,7 @@ tbody{
     width: 185px;
     position: relative;
     bottom: 50px;
-    left: 450px;
+    left: 325px;
     text-align: center;
 }
 
