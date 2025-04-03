@@ -2,6 +2,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const materialDropdown = document.getElementById("material");
     const sizeDropdown = document.getElementById("size");
     const poundsDropdown = document.getElementById("pounds");
+
+    const selectedMaterial = document.getElementById("selected-material-tee")
+    const selectedSize = document.getElementById("selected-size-tee");
+    const selectedPounds = document.getElementById("selected-pounds-tee");
+    const cartForm = document.getElementById("cartForm");
   
     const productName = "Tee"; // Set dynamically if needed
   
@@ -22,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
     // Fetch Sizes when Material is Selected
     materialDropdown.addEventListener("change", function () {
+      selectedMaterial.value = this.value;
       sizeDropdown.innerHTML = `<option value="">Select Size</option>`; // Reset
       poundsDropdown.innerHTML = `<option value="">Select Pounds</option>`;
       poundsDropdown.disabled = true;
@@ -43,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
     // Fetch Pounds when Size is Selected
     sizeDropdown.addEventListener("change", function () {
+      selectedSize.value = this.value;
       poundsDropdown.innerHTML = `<option value="">Select Pounds</option>`; // Reset
   
       fetch(
@@ -59,5 +66,18 @@ document.addEventListener("DOMContentLoaded", function () {
           poundsDropdown.disabled = false;
         });
     });
+
+    // Update Hidden Inputs Before Form Submission
+    cartForm.addEventListener("submit", function (event) {
+      if (!materialDropdown.value || !sizeDropdown.value || !poundsDropdown.value) {
+        event.preventDefault();
+        alert("Please select both Size and Type before adding to cart.");
+        return;
+    }
+      selectedMaterial.value = materialDropdown.value;
+      selectedSize.value = sizeDropdown.value;
+      selectedPounds.value = poundsDropdown.value;
+    });
+
   });
   

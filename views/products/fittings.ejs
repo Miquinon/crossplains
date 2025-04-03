@@ -1,103 +1,215 @@
 <div class="fittings">
+  <h2>Fittings</h2>
 
-    <h2>Fittings</h2>
+  <h4 class="t-title">Tee</h4>
+  <img src="/images/ab-3.jpg" alt="Tee's" class="tees" />
+  <div class="dropdown-container">
+    <form id="cartForm" action="/cart/add" method="POST">
+      <input
+        type="hidden"
+        name="user_id"
+        value="<%= user ? user.user_id : '' %>"
+      />
+      <input type="hidden" name="item_name" value="Tee" />
 
-    <h4 class="t-title">Tee</h4>
-    <img src="/images/ab-3.jpg" alt="Tee's" class="tees">
-    <div class="dropdown-container">
-        <select id="material" name="material">
+      <!-- Hidden Inputs to Store Selected Values -->
+      <input type="hidden" id="selected-material-tee" name="item_material" />
+      <input type="hidden" id="selected-size-tee" name="item_size" />
+      <input type="hidden" id="selected-pounds-tee" name="item_pounds" />
+
+      <select id="material" name="material">
         <option value="">Select Material</option>
-        </select>
+      </select>
 
-        <select id="size" name="size" disabled>
+      <select id="size" name="size" disabled>
         <option value="">Select Size</option>
-        </select>
+      </select>
 
-        <select id="pounds" name="pounds" disabled>
+      <select id="pounds" name="pounds" disabled>
         <option value="">Select Pounds</option>
-        </select>
-    </div>
-    
-    <h4 class="nine">90</h4>
-    <img src="/images/ab-4.jpg" alt="90's" class="ninety">
-    <div class="dropdown-container">
-        <select id="material90" name="material">
+      </select>
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" name="quantity" value="1" min="1" required />
+
+      <button type="submit">Add to Cart</button>
+    </form>
+  </div>
+
+  <h4 class="nine">90</h4>
+  <img src="/images/ab-4.jpg" alt="90's" class="ninety" />
+  <div class="dropdown-container">
+    <form id="cartForm" action="/cart/add" method="POST">
+      <input
+        type="hidden"
+        name="user_id"
+        value="<%= user ? user.user_id : '' %>"
+      />
+      <input type="hidden" name="item_name" value="90" />
+
+      <!-- Hidden Inputs to Store Selected Values -->
+      <input type="hidden" id="select-material" name="item_material" />
+      <input type="hidden" id="selected-size" name="item_size" />
+      <input type="hidden" id="selected-pounds" name="item_pounds" />
+
+      <select id="material90" name="material">
         <option value="">Select Material</option>
-        </select>
+      </select>
 
-        <select id="size90" name="size" disabled>
+      <select id="size90" name="size" disabled>
         <option value="">Select Size</option>
-        </select>
+      </select>
 
-        <select id="pounds90" name="pounds" disabled>
+      <select id="pounds90" name="pounds" disabled>
         <option value="">Select Pounds</option>
-        </select>
-    </div>
+      </select>
 
-    <h4 class="c-title">Crosses</h4>
-    <img src="/images/ab-5.jpg" alt="crosses" class="cross">
-    <div class="dropdown-container">
-        <select id="material-cross" name="material">
+      <label for="quantity">Quantity:</label>
+      <input type="number" name="quantity" value="1" min="1" required />
+
+      <button type="submit">Add to Cart</button>
+    </form>
+  </div>
+
+  <h4 class="c-title">Crosses</h4>
+  <img src="/images/ab-5.jpg" alt="crosses" class="cross" />
+  <div class="dropdown-container">
+    <form id="cartForm" action="/cart/add" method="POST">
+      <input
+        type="hidden"
+        name="user_id"
+        value="<%= user ? user.user_id : '' %>"
+      />
+      <input type="hidden" name="item_name" value="Cross" />
+
+      <!-- Hidden Inputs to Store Selected Values -->
+      <input type="hidden" id="select-material" name="item_material" />
+      <input type="hidden" id="selected-size" name="item_size" />
+      <input type="hidden" id="selected-pounds" name="item_pounds" />
+
+      <select id="material-cross" name="material">
         <option value="">Select Material</option>
-        </select>
+      </select>
 
-        <select id="size-cross" name="size" disabled>
+      <select id="size-cross" name="size" disabled>
         <option value="">Select Size</option>
-        </select>
+      </select>
 
-        <select id="pounds-cross" name="pounds" disabled>
+      <select id="pounds-cross" name="pounds" disabled>
         <option value="">Select Pounds</option>
-        </select>
-    </div>
+      </select>
 
-    <h4 class="snine">Street 90</h4>
-    <img src="/images/ab-9.jpg" alt="street 90" class="street">
-    <div class="dropdown-container">
-        <select id="material-street" name="material">
+      <label for="quantity">Quantity:</label>
+      <input type="number" name="quantity" value="1" min="1" required />
+
+      <button type="submit">Add to Cart</button>
+    </form>
+  </div>
+
+  <h4 class="snine">Street 90</h4>
+  <img src="/images/ab-9.jpg" alt="street 90" class="street" />
+  <div class="dropdown-container">
+    <form id="cartForm" action="/cart/add" method="POST">
+      <input
+        type="hidden"
+        name="user_id"
+        value="<%= user ? user.user_id : '' %>"
+      />
+      <input type="hidden" name="item_name" value="Street 90" />
+
+      <!-- Hidden Inputs to Store Selected Values -->
+      <input type="hidden" id="select-material" name="item_material" />
+      <input type="hidden" id="selected-size" name="item_size" />
+      <input type="hidden" id="selected-pounds" name="item_pounds" />
+
+      <select id="material-street" name="material">
         <option value="">Select Material</option>
-        </select>
+      </select>
 
-        <select id="size-street" name="size" disabled>
+      <select id="size-street" name="size" disabled>
         <option value="">Select Size</option>
-        </select>
+      </select>
 
-        <select id="pounds-street" name="pounds" disabled>
+      <select id="pounds-street" name="pounds" disabled>
         <option value="">Select Pounds</option>
-        </select>
-    </div>
+      </select>
 
-    <h4 class="fourty">45</h4>
-    <img src="/images/ab-10.jpg" alt="45" class="fourfive">
-    <div class="dropdown-container">
-        <select id="material45" name="material">
+      <label for="quantity">Quantity:</label>
+      <input type="number" name="quantity" value="1" min="1" required />
+
+      <button type="submit">Add to Cart</button>
+    </form>
+  </div>
+
+  <h4 class="fourty">45</h4>
+  <img src="/images/ab-10.jpg" alt="45" class="fourfive" />
+  <div class="dropdown-container">
+    <form id="cartForm" action="/cart/add" method="POST">
+      <input
+        type="hidden"
+        name="user_id"
+        value="<%= user ? user.user_id : '' %>"
+      />
+      <input type="hidden" name="item_name" value="45" />
+
+      <!-- Hidden Inputs to Store Selected Values -->
+      <input type="hidden" id="select-material" name="item_material" />
+      <input type="hidden" id="selected-size" name="item_size" />
+      <input type="hidden" id="selected-pounds" name="item_pounds" />
+
+      <select id="material45" name="material">
         <option value="">Select Material</option>
-        </select>
+      </select>
 
-        <select id="size45" name="size" disabled>
+      <select id="size45" name="size" disabled>
         <option value="">Select Size</option>
-        </select>
+      </select>
 
-        <select id="pounds45" name="pounds" disabled>
+      <select id="pounds45" name="pounds" disabled>
         <option value="">Select Pounds</option>
-        </select>
-    </div>
+      </select>
 
-    <h4 class="union">Hex Union</h4>
-    <img src="/images/ab-14.jpg" alt="hex union" class="hex">
-    <div class="dropdown-container">
-        <select id="material-hex" name="material">
+      <label for="quantity">Quantity:</label>
+      <input type="number" name="quantity" value="1" min="1" required />
+
+      <button type="submit">Add to Cart</button>
+    </form>
+  </div>
+
+  <h4 class="union">Hex Union</h4>
+  <img src="/images/ab-14.jpg" alt="hex union" class="hex" />
+  <div class="dropdown-container">
+    <form id="cartForm" action="/cart/add" method="POST">
+      <input
+        type="hidden"
+        name="user_id"
+        value="<%= user ? user.user_id : '' %>"
+      />
+      <input type="hidden" name="item_name" value="Hex Union" />
+
+      <!-- Hidden Inputs to Store Selected Values -->
+      <input type="hidden" id="select-material" name="item_material" />
+      <input type="hidden" id="selected-size" name="item_size" />
+      <input type="hidden" id="selected-pounds" name="item_pounds" />
+
+      <select id="material-hex" name="material">
         <option value="">Select Material</option>
-        </select>
+      </select>
 
-        <select id="size-hex" name="size" disabled>
+      <select id="size-hex" name="size" disabled>
         <option value="">Select Size</option>
-        </select>
+      </select>
 
-        <select id="pounds-hex" name="pounds" disabled>
+      <select id="pounds-hex" name="pounds" disabled>
         <option value="">Select Pounds</option>
-        </select>
-    </div>
+      </select>
 
+      <label for="quantity">Quantity:</label>
+      <input type="number" name="quantity" value="1" min="1" required />
+
+      <button type="submit">Add to Cart</button>
+    </form>
+  </div>
 </div>
 <script src="/scripts/p-fittings/drop_down_tee.js"></script>
 <script src="/scripts/p-fittings/drop_down_90.js"></script>
