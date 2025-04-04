@@ -1212,3 +1212,7 @@ tbody{
     padding: 5px;
 }
 
+#empty-cart{
+    justify-self: center;
+    text-decoration: underline;
+}

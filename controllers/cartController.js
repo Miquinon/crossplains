@@ -26,8 +26,8 @@ const CartController = {
         try {
             console.log("Request received at /cart/add"); // Debugging
             console.log("Request body:", req.body);
-            const { user_id, item_name, item_size, item_pounds, item_material, quantity } = req.body;
-            const item = await CartModel.addItem(user_id, item_name, item_size, item_pounds, item_material, quantity || 1);
+            const { user_id, item_name, item_size, item_pounds, quantity } = req.body;
+            const item = await CartModel.addItem(user_id, item_name, item_size, item_pounds, quantity || 1);
             
             res.redirect(`/cart/${user_id}`);
         } catch (error) {
@@ -39,8 +39,8 @@ const CartController = {
 
     async updateItem(req, res) {
         try {
-            const { user_id, item_name, item_size, item_pounds, item_material, quantity } = req.body;
-            const item = await CartModel.updateItem(user_id, item_name, item_size, item_pounds, item_material, quantity);
+            const { user_id, item_name, item_size, item_pounds, quantity } = req.body;
+            const item = await CartModel.updateItem(user_id, item_name, item_size, item_pounds, quantity);
             res.status(200).json({ success: true, item });
         } catch (error) {
             res.status(500).json({ success: false, error: error.message });
@@ -49,9 +49,9 @@ const CartController = {
 
     async removeItem(req, res) {
         try {
-            const { user_id, item_name, item_size, item_pounds, item_material } = req.body;
+            const { user_id, item_name, item_size, item_pounds } = req.body;
             // const { user_id, item_name } = req.query; 
-            const item = await CartModel.removeItem(user_id, item_name, item_size, item_pounds, item_material);
+            const item = await CartModel.removeItem(user_id, item_name, item_size, item_pounds);
             res.status(200).json({ success: true, item });
         } catch (error) {
             res.status(500).json({ success: false, error: error.message });
