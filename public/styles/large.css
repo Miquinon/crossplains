@@ -991,13 +991,17 @@ h3{
     text-align: center;
 }
 
+#wrapper p{
+    margin-top: 50px;
+    font-size: 14pt;
+}
+
 #wrapper p a{
     background-color: gold;
     color: black;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 8px 15px;
     border: solid 2px black;
-    margin-bottom: 50px;
+    border-radius: 10px;
 }
 
 #loginContainer{
@@ -1007,6 +1011,10 @@ h3{
 #loginForm fieldset button{
     color: gold;
     background-color: black;
+    margin: 25px 0;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 14pt;
 }
 
 #registerContainer{
