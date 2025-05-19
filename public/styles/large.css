@@ -122,7 +122,7 @@ footer {
     justify-content: space-evenly;
     color: gold;
     background-color: black;
-    padding-left: 100px;
+    
 
 }
 
@@ -991,7 +991,7 @@ h3{
     text-align: center;
 }
 
-#wrapper p{
+.sign-up{
     margin-top: 50px;
     font-size: 14pt;
 }
